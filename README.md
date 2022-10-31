@@ -45,3 +45,29 @@
 - DataSync - DataSync allows for online data transfer from on-premises to AWS storage services like S3 or EFS.
 - Snow Family - The Snow Family allows you to transfer large amounts of on-premises data to AWS using a physical device.
 
+#### Analytics
+- Redshift -  Redshift is a scalable data warehouse solution.
+- Athena - Athena is a query service for Amazon S3.
+- Kinesis - Kinesis allows you to analyze data and video streams in real time.
+- Glue - Glue prepares your data for analytics.
+- Elastic MapReduce (EMR) - EMR helps you process large amounts of data.
+- Data Pipeline - Data Pipeline helps you move data between compute and storage services running either on AWS or on-premises.
+
+
+#### Machine Learning
+- Rekognition - Rekognition allows you to automate your image and video analysis.
+- Comprehend - Comprehend is a natural-language processing (NLP) service that finds relationships in text.
+- SageMaker - SageMaker helps you build, train, and deploy machine learning models quickly.
+- Polly - Polly turns text into speech.
+- Translate - Translate provides language translation
+- Lex - Lex helps you build conversational interfaces like chatbots.
+
+#### Developer Tools
+- Cloud9 - Cloud9 allows you to write code within an integrated development environment (IDE) from within your web browser.  
+- CodeCommit - CodeCommit is a source control system for private Git repositories.  
+- CodeDeploy - CodeDeploy manages the deployment of code to compute services in the cloud or on-premises.
+- CodeBuild - CodeBuild allows you to build and test your application source code.
+- CodePipeline - CodePipeline automates the software release process
+- X-Ray - X-Ray helps you debug production applications.
+
+
