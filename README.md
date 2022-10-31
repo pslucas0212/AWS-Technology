@@ -12,16 +12,41 @@
     - Reserved Instances
     - Dedicated Hosts
     - Savings plans
+  - Features
+    - Elastic Load Balance across EC2 instances
+    - EC2 autoscaling
+  - Horizontal vs vertical scaling
+  - Connect to EC2 instance via SSH key paris
 - Lambda - Lambda is a serverless compute service that lets you run code without managing servers.
-- Fargate - Fargate is a serverless compute engine for containers.
-- Lightsail - Lightsail allows you to quickly launch all the resources you need for small projects.
-- Outposts - Outposts allows you to run cloud services in your internal data center.
-- Batch - Batch allows you to process large workloads in smaller chunks (or batches).
+  - Supports popular programming languages: Java, GO, PowerShell, Node. JS, C#, Python, and RUub
+  - Executes code in response to events
+  - 15 minute timeout
+  - Pricing Modle
+    - Compute Time
+    - Request Count
+    - 1 million always free lambda calls
+- Fargate - Fargate is a **serverless compute engine** for containers.
+- Lightsail - Lightsail allows you to quickly launch all the resources you need for small projects. Lightsail is a **compute** service
+- Outposts - Outposts allows you to run cloud services in your internal data center. Support for hybrid deployments
+- Batch - Batch allows you to process large workloads in smaller chunks (or batches).  Batch is a **compute** sercie
 
 #### Storage
 - S3 - Simple Storage Service - S3 is an **object storage service** for the cloud that is highly available.
+  - Set security at bucket or individual object level using ACL, bucket policies or access point policies
+  - Enable version
+  - S3 Access logs
+  - Regional service, but must have a globally unique names
+  - Storage Classes
+    - S3 standard
+    - S3 Intelligent Tiering
+    - S3 Standard-infrequent Access
+    - S3 One Zone-infrequent Access
+    - S3 Glacier
+    - S3 Glacier Deep Archive
+    - S3 Outposts
 - EBS - Elastic Block Storage - EBS is a storage device (called a volume) that can be attached to (or removed from) your instance.
-- EFS - Elastic File System - EFS is a serverless network file system for sharing files.
+- EC2 Instance store is physically attached to EC2 instance and cannot be removed.  Data is lost when EC2 instance is paused/stopped.  Volumes are ephemeral
+- EFS - Elastic File System - EFS is a serverless network file system for sharing files.  Supports Linux sysrems only
 - Storage Gateway - Storage Gateway is a hybrid storage service.
 - Backup - Backup helps you manage data backups across multiple data services
 
@@ -34,6 +59,9 @@
 
 #### Content Delivery
 - CloudFront - CloudFront is a CDN that delivers data and applications globally with low latency.
+  - S3 static websites
+  - Prevent Attacks - DDOS and geo restictions
+  - IP address blocking
 - Global Accelerator - Global Accelerator sends your users through the AWS global network when accessing your content, speeding up delivery.
 - S3 Transfer Acceleration - S3 Transfer Acceleration improves content uploads and downloads to and from S3 buckets.
 
