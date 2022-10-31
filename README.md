@@ -5,7 +5,13 @@
 ### AWS Services
 
 #### Compute
-- EC2 - Elactic Cloud Compute. EC2 allows you to rent and manage virtual servers in the cloud. 
+- EC2 - Elastic Cloud Compute. EC2 allows you to rent and manage virtual servers in the cloud.  Provision with one click.  Chose pre-configured template from Amazon Machine Image (AMI). Configure and manages EC2 instance from the AWS Management console.  SSH secure connection to laptop.  EC2 Instance Connect (EIC) allows you to use IAM policies to control SSH access without the need to manage SSH keys.  Systems manages connects to EC2 via web browser or AWS CLI.
+  - Pricing Options
+    - On-demand
+    - Spot
+    - Reserved Instances
+    - Dedicated Hosts
+    - Savings plans
 - Lambda - Lambda is a serverless compute service that lets you run code without managing servers.
 - Fargate - Fargate is a serverless compute engine for containers.
 - Lightsail - Lightsail allows you to quickly launch all the resources you need for small projects.
