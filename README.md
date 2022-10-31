@@ -70,4 +70,16 @@
 - CodePipeline - CodePipeline automates the software release process
 - X-Ray - X-Ray helps you debug production applications.
 
+#### Deployment and Infrastucture Management
+- CloudFormation - CloudFormation allows you to provision AWS resources using Infrastructure as Code (IaC).
+- Elastic Beanstalk - Elastic Beanstalk allows you to deploy your web applications and web services to AWS.
+- OpsWorks -OpsWorks allows you to use Chef or Puppet to automate the configuration of your servers and deploy code.
 
+#### Messaging and Integration
+- Simple Queue Service (SQS) - SQS is a message queuing service that allows you to build loosely coupled systems.
+- Simple Notification Service (SNS) - SNS allows you to send emails and text messages from your applications.
+- Simple Email Service (SES) - SES is an email service that allows you to send richly formatted HTML emails from your applications.
+
+#### Auditing, Monitoring, and Logging
+- CloudWatch - CloudWatch is a collection of services that help you monitor and observe your cloud resources.
+- CloudTrail - CloudTrail tracks user activity and API calls within your account.
