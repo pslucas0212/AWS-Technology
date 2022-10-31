@@ -18,20 +18,34 @@
   - Horizontal vs vertical scaling
   - Connect to EC2 instance via SSH key paris
 - Lambda - Lambda is a serverless compute service that lets you run code without managing servers.
-  - Supports popular programming languages: Java, GO, PowerShell, Node. JS, C#, Python, and RUub
+  - Supports popular programming languages: Java, GO, PowerShell, Node. JS, C#, Python, and Ruby
+  - Scales automaticall
   - Executes code in response to events
   - 15 minute timeout
   - Pricing Modle
     - Compute Time
     - Request Count
     - 1 million always free lambda calls
-- Fargate - Fargate is a **serverless compute engine** for containers.
+- Fargate - Fargate is a **serverless compute engine** for containers
+  - Manage containers like docker
+  - Scale automatically
 - Lightsail - Lightsail allows you to quickly launch all the resources you need for small projects. Lightsail is a **compute** service
+  - Deploye preconfigured apps like wordpress
+  - Easy to use
+  - Includes VM, ssd storage, data transfer, DNS Managment, static IP
 - Outposts - Outposts allows you to run cloud services in your internal data center. Support for hybrid deployments
-- Batch - Batch allows you to process large workloads in smaller chunks (or batches).  Batch is a **compute** sercie
+  - Workloads on-premise
+  - AWS Delivers and installs
+  - Hybrid experience
+  - Access cloud services and APIs to develop apps on-premise
+- Batch - Batch allows you to process large workloads in smaller chunks (or batches).  Batch is a **compute** service.  Dynamicall provisions instances based on volumes
 
 #### Storage
 - S3 - Simple Storage Service - S3 is an **object storage service** for the cloud that is highly available.
+  - Objects are stored in buckets
+  - Unlimted storage
+  - Objects can be public or private
+  - upload objects, via console, CLI or programatically with code using SDK
   - Set security at bucket or individual object level using ACL, bucket policies or access point policies
   - Enable version
   - S3 Access logs
@@ -43,16 +57,23 @@
     - S3 One Zone-infrequent Access
     - S3 Glacier
     - S3 Glacier Deep Archive
-    - S3 Outposts
+    - S3 Outposts - on-prem S3
 - EBS - Elastic Block Storage - EBS is a storage device (called a volume) that can be attached to (or removed from) your instance.
-- EC2 Instance store is physically attached to EC2 instance and cannot be removed.  Data is lost when EC2 instance is paused/stopped.  Volumes are ephemeral
-- EFS - Elastic File System - EFS is a serverless network file system for sharing files.  Supports Linux sysrems only
-- Storage Gateway - Storage Gateway is a hybrid storage service.
-- Backup - Backup helps you manage data backups across multiple data services
+  - Data persists when instances is not running
+  - Tied to one AZ
+  - only attached to one instances the same AZ
+- EC2 Instance store is physically attached to EC2 instance and cannot be removed.  Data is lost when EC2 instance is stopped.  Volumes are ephemeral
+- EFS - Elastic File System - EFS is a serverless network file system for sharing files.  Supports Linux sysrems only.  More expensive than EBS.  Acessible across different AZs in same region
+- Storage Gateway - Storage Gateway is a hybrid storage service
+  - Connect on-premises with the cloud
+- Backup - Backup helps you manage data backups across multiple data services.  Integrates with EC2, EBS, EFS and more.  Backup plan includes frequency and retention
 
 #### Networking
 - Route 53 -Route 53 is a DNS service that routes users to applications.
+- AWS Direct Connect is a dedicated physical network connection from data center to AWS
 - Virtual Private Cloud (VPC) - VPC is a foundational service that allows you to create a secure private network in the AWS Cloud where you launch your resources.
+  - EC2 Public subnet -> NACL -> Router (route table) -> Internet Gateway -> internet
+  - VPC Peering connects to VPCs within AWS
 - Virtual Private Network (VPN) - Site-to-Site VPN creates a secure connection between your internal networks and your AWS VPCs. 
 - Direct Connect - Direct Connect is a dedicated physical network connection from your on-premises data center to AWS.
 - API Gateway - API Gateway allows you to build and manage APIs.
@@ -66,12 +87,12 @@
 - S3 Transfer Acceleration - S3 Transfer Acceleration improves content uploads and downloads to and from S3 buckets.
 
 #### Databases
-- Relational Database Service (RDS) - RDS is a service that makes it easy to launch and manage relational databases.
+- Relational Database Service (RDS) - RDS is a service that makes it easy to launch and manage relational databases. Like Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle Database, and SQL Server.
 - Aurora - Aurora is a relational database compatible with MySQL and PostgreSQL that was created by AWS.
 - DocumentDB - DocumentDB is a fully managed document database that supports MongoDB.
 - DynamoDB - DynamoDB is a fully managed NoSQL key-value and document database.
 - ElastiCache - ElastiCache is a fully managed in-memory datastore compatible with Redis or Memcached.
-- Neptune - Neptune is a fully managed graph database that supports highly connected datasets.
+- Neptune - Neptune is a fully managed graph database that supports highly connected datasets. Create social media graphs
 
 #### Migration and Transfer
 - Database Migration Service (DMS) - DMS helps you migrate databases to or within AWS.
