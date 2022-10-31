@@ -33,63 +33,15 @@
 
 #### Databases
 - Relational Database Service (RDS) - RDS is a service that makes it easy to launch and manage relational databases.
+- Aurora - Aurora is a relational database compatible with MySQL and PostgreSQL that was created by AWS.
+- DocumentDB - DocumentDB is a fully managed document database that supports MongoDB.
+- DynamoDB - DynamoDB is a fully managed NoSQL key-value and document database.
+- ElastiCache - ElastiCache is a fully managed in-memory datastore compatible with Redis or Memcached.
+- Neptune - Neptune is a fully managed graph database that supports highly connected datasets.
 
-CLICK HERE TO GO TO LESSON >
+#### Migration and Transfer
+- Database Migration Service (DMS) - DMS helps you migrate databases to or within AWS.
+- Server Migration Service (SMS) - SMS allows you to migrate on-premises servers to AWS.
+- DataSync - DataSync allows for online data transfer from on-premises to AWS storage services like S3 or EFS.
+- Snow Family - The Snow Family allows you to transfer large amounts of on-premises data to AWS using a physical device.
 
-Aurora
-
-Aurora is a relational database compatible with MySQL and PostgreSQL that was created by AWS.
-
-CLICK HERE TO GO TO LESSON >
-
-DocumentDB
-
-DocumentDB is a fully managed 
-
-document database that supports MongoDB.
-
-CLICK HERE TO GO TO LESSON >
-
-DynamoDB
-
-DynamoDB is a fully managed NoSQL key-value and document database.
-
-CLICK HERE TO GO TO LESSON >
-
-Database Migration Service (DMS)
-
-DMS helps you migrate databases to or within AWS.
-
-CLICK HERE TO GO TO LESSON >
-
-Server Migration Service (SMS)
-
-SMS allows you to migrate on-premises servers to AWS.
-
-CLICK HERE TO GO TO LESSON >
-
-DataSync
-
-DataSync allows for online data transfer from on-premises to AWS storage services like S3 or EFS.
-
-CLICK HERE TO GO TO LESSON >
-
-Snow Family
-
-The Snow Family allows you to transfer large amounts of on-premises data to AWS using a physical device.
-
-CLICK HERE TO GO TO LESSON >
-
-Databases
-
-Migration and Transfer
-
-ElastiCache
-
-ElastiCache is a fully managed in-memory datastore compatible with Redis or Memcached.
-
-CLICK HERE TO GO TO LESSON >
-
-Neptune
-
-Neptune is a fully managed graph database that supports highly connected datasets.
