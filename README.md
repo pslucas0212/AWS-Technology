@@ -80,6 +80,9 @@
 
 #### Content Delivery
 - CloudFront - CloudFront is a CDN that delivers data and applications globally with low latency.
+  - Content globally available or restrict base on location
+  - Speeds up delivery of static and dynamic web content
+  - edge locations to cache content
   - S3 static websites
   - Prevent Attacks - DDOS and geo restictions
   - IP address blocking
