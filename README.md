@@ -7,16 +7,27 @@
 #### Compute
 - EC2 - Elastic Cloud Compute. EC2 allows you to rent and manage virtual servers in the cloud.  Provision with one click.  Chose pre-configured template from Amazon Machine Image (AMI). Configure and manages EC2 instance from the AWS Management console.  SSH secure connection to laptop.  EC2 Instance Connect (EIC) allows you to use IAM policies to control SSH access without the need to manage SSH keys.  Systems manages connects to EC2 via web browser or AWS CLI.
   - Pricing Options
-    - On-demand
+    - On-demand - Live on-demand fixed billing down to the second
     - Spot
-    - Reserved Instances
+    - Reserved Instances - commit to a specific instance in a specific region
     - Dedicated Hosts
-    - Savings plans
+    - Savings plans - commit to a usage spend
   - Features
-    - Elastic Load Balance across EC2 instances
+    - Elastic Load Balance across EC2 instances - classic load balancers   |   application load balancers   |   gateway load balancers   |   network load balancers
     - EC2 autoscaling
   - Horizontal vs vertical scaling
   - Connect to EC2 instance via SSH key paris
+  - Remember EC2 instances deployed in a datacenter that resides in an AZ which resides in a Region
+    - A single region contains mutliple AZs
+    - A single AZ contains mutliple datacenters
+    - A single datacenter containers mutliple servers
+    - Servers are physical h/w running in a datacenter
+    - EC2 instances are virtual servers running on physical servers.  These instances are not considered serverless.
+    - Region (N. Virginia) -> AZ (US-EAST-1) -> datacenter
+  - AWS Console - You're able to configure and manage your instances via a web browser.
+  - SSH allows you to establish a secure connection to your instance from your local laptop. 
+  - EC2 Instance Connect (EIC).  EIC allows you to use IAM policies to control SSH access to your instances, removing the need to manage SSH keys.
+  - AWS Systems Manager - Systems Manager allows you to manage your EC2 instances via a web browser or the AWS CLI.
 - Lambda - Lambda is a serverless compute service that lets you run code without managing servers.
   - Supports popular programming languages: Java, GO, PowerShell, Node. JS, C#, Python, and Ruby
   - Scales automaticall
