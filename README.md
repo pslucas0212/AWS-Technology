@@ -147,17 +147,65 @@
 
 #### Databases
 - Relational Database Service (RDS) - RDS is a service that makes it easy to launch and manage relational databases. Like Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle Database, and SQL Server.
+  - Offers high availability and fault tolerance using Multi-AZ deployment option
+  - AWS manages the database with automatic software patching,  automated backups, operating system maintenance, and more.
+  - Launches read replicas across regions to provide enhanced performance and durability
 - Aurora - Aurora is a relational database compatible with MySQL and PostgreSQL that was created by AWS.
+  - Scales automatically while  providing durability and high availability 
+  - Managed by RDS
 - DocumentDB - DocumentDB is a fully managed document database that supports MongoDB.
+  - Document database
+  - MongoDB Compatible
+  - Fully managed and serverless
+  - non-relational
 - DynamoDB - DynamoDB is a fully managed NoSQL key-value and document database.
+  - Fully managed and serverless
+  - Scales automatically to massive workloads with fast performance
+  - non-relational
 - ElastiCache - ElastiCache is a fully managed in-memory datastore compatible with Redis or Memcached.
+  - In-memory datastore
+  - Data can be lost
+  - Offers high performance and low latency
 - Neptune - Neptune is a fully managed graph database that supports highly connected datasets. Create social media graphs
+  - Graph database service
+  - Supports highly connected datasets like social media networks
+  - Fully managed and serverless
+  - Fast and reliable
 
 #### Migration and Transfer
 - Database Migration Service (DMS) - DMS helps you migrate databases to or within AWS.
+  - Migrate on-premises databases to AWS
+  - Continuous data replication
+  - Supports homogeneous and heterogeneous migrations
+  - Virtually no downtime
+  - Good for migrating:
+    - Oracle to Aurora MySQL
+    - Oracle on-prem to RDS Oracle
+    - RDS Oracle to Aurora MySQL
 - Server Migration Service (SMS) - SMS allows you to migrate on-premises servers to AWS.
+  - Migrates on-premises servers to AWS
+  - Server saved as a new Amazon Machine Image (AMI)
+  - Use AMI to launch servers as EC2 instances
 - DataSync - DataSync allows for online data transfer from on-premises to AWS storage services like S3 or EFS.
+  - Migrates data from on-premises to AWS
+  - Copy data over Direct Connect or the internet
+  - Copy data between AWS storage services
+  - Replicate data cross-Region or cross-account 
 - Snow Family - The Snow Family allows you to transfer large amounts of on-premises data to AWS using a physical device.
+  - Snowcone
+    - Smallest member of data transport devices
+    - 8 terabytes of usable storage
+    - Offline shipping
+    - Online with DataSync
+  - Snowball and Snowball Edge
+    - Petabyte-scale data transport solution
+    - Transfer data in and out 
+    - Cheaper than internet transfer
+    - Snowball Edge supports EC2 and Lambda
+  - Snowmobile
+    - Multi-petabyte or exabyte scale
+    - Data loaded to S3
+    - Securely transported
 
 #### Analytics
 - Redshift -  Redshift is a scalable data warehouse solution.
