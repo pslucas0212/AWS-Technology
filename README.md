@@ -83,33 +83,67 @@
 - EBS - Elastic Block Storage - EBS is a storage device (called a volume) that can be attached to (or removed from) your instance.
   - Data persists when instances is not running
   - Tied to one AZ
-  - only attached to one instances the same AZ
-- EC2 Instance store is physically attached to EC2 instance and cannot be removed.  Data is lost when EC2 instance is stopped.  Volumes are ephemeral
-- EFS - Elastic File System - EFS is a serverless network file system for sharing files.  Supports Linux sysrems only.  More expensive than EBS.  Acessible across different AZs in same region
+  - only attached to one instance in the same AZ
+  - Good for running a database or long-term storage
+- EC2 Instance store is physically attached to EC2 instance and cannot be removed.  Faster I/O.  Data is lost when EC2 instance is stopped.  Volumes are ephemeral
+- EFS - Elastic File System - EFS is a serverless network file system for sharing files.  Supports Linux systems only.  More expensive than EBS.  Acessible across different AZs in same region
+  - Business directories
+  - Lift and Shift
 - Storage Gateway - Storage Gateway is a hybrid storage service
   - Connect on-premises with the cloud
-- Backup - Backup helps you manage data backups across multiple data services.  Integrates with EC2, EBS, EFS and more.  Backup plan includes frequency and retention
+  - Move backups to the loud
+- AWS Backup - Backup helps you manage data backups across multiple data services.  Integrates with EC2, EBS, EFS and more.  Backup plan includes frequency and retention
 
 #### Networking
-- Route 53 -Route 53 is a DNS service that routes users to applications.
+- Route 53 - Route 53 is a DNS service that routes users to applications.
+  - Domain name registration
+  - Performs health checks on AWS resources
+  - Supports hybrid cloud architectures
 - AWS Direct Connect is a dedicated physical network connection from data center to AWS
-- Virtual Private Cloud (VPC) - VPC is a foundational service that allows you to create a secure private network in the AWS Cloud where you launch your resources.
-  - EC2 Public subnet -> NACL -> Router (route table) -> Internet Gateway -> internet
-  - VPC Peering connects to VPCs within AWS
+  - Dedicated physical network connection
+  - Connects your on-premises data center to AWS
+  - Data travels over a private network
+  - Supports a hybrid environment
+  - Good for:
+    - Large datasets
+    - Business Critical data
+    - Hybrid Model
+- Amazon Virtual Private Cloud (VPC) - VPC is a foundational service that allows you to create a secure private network in the AWS Cloud where you launch your resources.
+  - Private virtual network
+  - Launch resources like EC2 instances inside the VPC. In a subnet
+  - Isolate and protect resources
+  - A VPC spans Availability Zones in a Region
+  - VPC - EC2 private subnet -> EC2 Public subnet -> NACL -> Router (route table) -> Internet Gateway -> internet
+  - VPC Peering connects to VPCs within AWS.  VPC A <-> VPC Peering <-> VPC B
 - Virtual Private Network (VPN) - Site-to-Site VPN creates a secure connection between your internal networks and your AWS VPCs. 
-- Direct Connect - Direct Connect is a dedicated physical network connection from your on-premises data center to AWS.
+  - Similar to Direct Connect, but data travels over the public internet
+  - Data is automatically encrypted
+  - Connects your on-premises data center to AWS
+  - Supports a hybrid environment
 - API Gateway - API Gateway allows you to build and manage APIs.
+  - Share data between systems
+  - Integrate with services like Lambda
+
 
 #### Content Delivery
 - CloudFront - CloudFront is a CDN that delivers data and applications globally with low latency.
   - Content globally available or restrict base on location
   - Speeds up delivery of static and dynamic web content
   - edge locations to cache content
-  - S3 static websites
-  - Prevent Attacks - DDOS and geo restictions
-  - IP address blocking
-- Global Accelerator - Global Accelerator sends your users through the AWS global network when accessing your content, speeding up delivery.
+  - Good for:
+    - S3 static websites
+    - Prevent Attacks - DDOS and geo restictions
+    - IP address blocking
+  - If data not available at the edge, CloudFront retreives data from the origin
+- Amazon Global Accelerator - Global Accelerator sends your users through the AWS global network when accessing your content, speeding up delivery.
+  - Improves latency and availability of single-Region applications
+  - Sends traffic through the AWS global network infrastructure
+  - 60% performance boost
+  - Automatically re-routes traffic to healthy available regional endpoints
 - S3 Transfer Acceleration - S3 Transfer Acceleration improves content uploads and downloads to and from S3 buckets.
+  - Fast transfer of files over long distances
+  - Uses CloudFront’s globally distributed edge locations
+  - Customers around the world can upload to a central bucket
 
 #### Databases
 - Relational Database Service (RDS) - RDS is a service that makes it easy to launch and manage relational databases. Like Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle Database, and SQL Server.
