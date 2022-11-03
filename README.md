@@ -29,8 +29,10 @@
   - EC2 Instance Connect (EIC).  EIC allows you to use IAM policies to control SSH access to your instances, removing the need to manage SSH keys.
   - AWS Systems Manager - Systems Manager allows you to manage your EC2 instances via a web browser or the AWS CLI.
 - Lambda - Lambda is a serverless compute service that lets you run code without managing servers.
-  - Supports popular programming languages: Java, GO, PowerShell, Node. JS, C#, Python, and Ruby
-  - Scales automaticall
+  - Author application code called functions
+    - Supports popular programming languages: Java, GO, PowerShell, Node. JS, C#, Python, and Ruby
+  - Scales automatically
+  - Serverless means you don't worry about managing servers like EC2 instances
   - Executes code in response to events
   - 15 minute timeout
   - Pricing Modle
@@ -40,16 +42,18 @@
 - Fargate - Fargate is a **serverless compute engine** for containers
   - Manage containers like docker
   - Scale automatically
+  - Serverless so you don't worry about managng instances
 - Lightsail - Lightsail allows you to quickly launch all the resources you need for small projects. Lightsail is a **compute** service
   - Deploye preconfigured apps like wordpress
-  - Easy to use
+  - Easy to use - simple screens
   - Includes VM, ssd storage, data transfer, DNS Managment, static IP
+  - Provides low predictable monthly fee
 - Outposts - Outposts allows you to run cloud services in your internal data center. Support for hybrid deployments
-  - Workloads on-premise
-  - AWS Delivers and installs
+  - Workloads on-premise due to low-latency or data sovereignty
+  - AWS Delivers and installs serverers in customer data center
   - Hybrid experience
   - Access cloud services and APIs to develop apps on-premise
-- Batch - Batch allows you to process large workloads in smaller chunks (or batches).  Batch is a **compute** service.  Dynamicall provisions instances based on volumes
+- Batch - Batch allows you to process large workloads in smaller chunks (or batches).  Batch is a **compute** service.  Dynamically provisions instances based on volumes
 
 #### Storage
 - S3 - Simple Storage Service - S3 is an **object storage service** for the cloud that is highly available.
