@@ -241,6 +241,9 @@
 - QuickSight helps you visualize your data.
   - Build interactive dashboards
   - Embed dashboards in your applications
+- Analytics are good for:
+  - Search data in S3.  Athena helps you query historical data stored in S3 as if they were relational data using standard SQL.
+  - Log Analytics. Kinesis helps you analyze logs in near real time for application monitoring or fraud detection.
 
 
 
