@@ -208,12 +208,40 @@
     - Securely transported
 
 #### Analytics
+- A data warehouse is a data storage solution that aggregates massive amounts of historical data from disparate sources.
+  - Data warehouses support querying, reporting, analytics, and business intelligence. They are not used for transaction processing.
 - Redshift -  Redshift is a scalable data warehouse solution.
+  - Data warehousing solution
+  - Improves speed and efficiency
+  - Handles exabyte-scale data
+  - Good For:
+    - Data consolidation - When you need to consolidate multiple data sources for reporting
+    - Relational Databases - When you want to run a database that doesn't require real-time transaction processing (insert, update, and delete)
+- Analytics is the act of querying or processing your data.
 - Athena - Athena is a query service for Amazon S3.
-- Kinesis - Kinesis allows you to analyze data and video streams in real time.
+  - Query service
+  - Analyze S3 data using SQL
+  - Pay per query
+  - Considered serverless
 - Glue - Glue prepares your data for analytics.
+  - Extract, transform, load (ETL) service
+  - Prepare and load data
+  - Helps to better understand your data
+- Kinesis - Kinesis allows you to analyze data and video streams in real time.
+  - Analyze real-time, streaming data
+  - Supports video, audio, application logs, website clickstreams, and IoT
 - Elastic MapReduce (EMR) - EMR helps you process large amounts of data.
+  - Process big data
+  - Analyze data using Hadoop
+  - Works with big data frameworks
 - Data Pipeline - Data Pipeline helps you move data between compute and storage services running either on AWS or on-premises.
+  - Moves data at specific intervals
+  - Moves data based on conditions
+  - Sends notifications on success or failure
+- QuickSight helps you visualize your data.
+  - Build interactive dashboards
+  - Embed dashboards in your applications
+
 
 
 #### Machine Learning
