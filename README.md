@@ -57,22 +57,29 @@
 
 #### Storage
 - S3 - Simple Storage Service - S3 is an **object storage service** for the cloud that is highly available.
-  - Objects are stored in buckets
+  - Objects (files) are stored in buckets (folders)
   - Unlimted storage
   - Objects can be public or private
   - upload objects, via console, CLI or programatically with code using SDK
   - Set security at bucket or individual object level using ACL, bucket policies or access point policies
-  - Enable version
+  - Enable versioning
   - S3 Access logs
   - Regional service, but must have a globally unique names
+  - Durability - objects are never lost.  S3 has 9 11s durability
+  - Availability - S3 standard 4 9s availability
   - Storage Classes
-    - S3 standard
-    - S3 Intelligent Tiering
-    - S3 Standard-infrequent Access
-    - S3 One Zone-infrequent Access
-    - S3 Glacier
-    - S3 Glacier Deep Archive
-    - S3 Outposts - on-prem S3
+    - S3 standard - general purpose, frequent access, and data stored across multiple AZs
+    - S3 Intelligent-tiering - automatically determines most cost effective storage
+    - S3 Standard-infrequent Access - long live data infrequently accessed
+    - S3 One Zone-infrequent Access - recreatable data
+    - S3 Glacier - long term data storage and retrieval
+    - S3 Glacier Deep Archive - long term data accessed once or twice a year
+    - S3 Outposts - on-prem S3 service when data needs to be kept on-prem
+  - Good for:
+    - Static website
+    - Data archive
+    - Analytic systems
+    - Mobile apps
 - EBS - Elastic Block Storage - EBS is a storage device (called a volume) that can be attached to (or removed from) your instance.
   - Data persists when instances is not running
   - Tied to one AZ
