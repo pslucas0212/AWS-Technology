@@ -97,6 +97,8 @@ Companies today need to collect, store, and analyze the data they've accumulated
 - AWS Backup - Backup helps you manage data backups across multiple data services.  Integrates with EC2, EBS, EFS and more.  Backup plan includes frequency and retention
 
 #### Networking
+Networking connects computers together and allows for the sharing of data and applications, around the globe, in a secure manner using virtual routers, firewalls, and network management services.   
+
 - Route 53 - Route 53 is a DNS service that routes users to applications.
   - Domain name registration
   - Performs health checks on AWS resources
@@ -117,17 +119,27 @@ Companies today need to collect, store, and analyze the data they've accumulated
   - A VPC spans Availability Zones in a Region
   - VPC - EC2 private subnet -> EC2 Public subnet -> NACL -> Router (route table) -> Internet Gateway -> internet
   - VPC Peering connects to VPCs within AWS.  VPC A <-> VPC Peering <-> VPC B
+  - Components of a VPC:
+    - AZ
+    - VPC
+    - Subnet
+    - NACL
+    - Router
+    - InternetGateway
 - Virtual Private Network (VPN) - Site-to-Site VPN creates a secure connection between your internal networks and your AWS VPCs. 
   - Similar to Direct Connect, but data travels over the public internet
   - Data is automatically encrypted
   - Connects your on-premises data center to AWS
   - Supports a hybrid environment
+  - A Site-to-Site VPN makes moving applications to the cloud easier.
 - API Gateway - API Gateway allows you to build and manage APIs.
   - Share data between systems
   - Integrate with services like Lambda
 
 
 #### Content Delivery
+A CDN is a mechanism to deliver content quickly and efficiently based on geographic location.  Latency simply means the time it takes to respond to a request.  Low latency is good!  
+
 - CloudFront - CloudFront is a CDN that delivers data and applications globally with low latency.
   - Content globally available or restrict base on location
   - Speeds up delivery of static and dynamic web content
@@ -263,20 +275,25 @@ Artificial intelligence (AI) teaches computers to do things that normally requir
   - Prepare data for models
   - Train and deploy models
   - Provides Deep Learning AMIs
+  - Companies like Netflix and Amazon use machine learning models to recommend movies and products to buy. SageMaker is a great tool for creating these models.
 - Polly - Polly turns text into speech.
   - Mimics natural-sounding human speech
   - Several voices across many languages
   - Can create a custom voice
+  - Polly could convert the text on a blog post to speech that could then be downloaded or replayed in MP3 format. Audio is often a great complement to written communication.
 - Translate - Translate provides language translation
   - Provides real-time and batch language translation
   - Supports many languages
   - Translates many content formats
+  - translate allows you to add localization to your applications to support your diverse user base. Translate supports several popular languages.
 - Lex - Lex helps you build conversational interfaces like chatbots.
   - Recognizes speech and understands language
   - Build highly engaging chatbots
   - Powers Amazon Alexa
+  - Amazon used the same technologies that power Lex to integrate Amazon Alexa with the Echo device.
 
 #### Developer Tools
+oftware developers use tools to accelerate the  software development and release cycle.
 - Cloud9 - Cloud9 allows you to write code within an integrated development environment (IDE) from within your web browser.
 - Cloud9 preconfigures the development environment with the needed SDKs and libraries. You can easily write the code for your Lambda function directly in your web browser.   
   - Integrated development environment (IDE)
