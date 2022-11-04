@@ -312,8 +312,7 @@ Artificial intelligence (AI) teaches computers to do things that normally requir
 
 
 #### Deployment and Infrastucture Management  
-These services help you quickly stand up new applications,automate the management of infrastructure, and provide real-time visibility into system health.  
-Infrastructure as Code (IaC).  IaC allows you to write a script to provision AWS resources. The benefit is that you provision resources in a reproducible manner that saves time.  
+These services help you quickly stand up new applications,automate the management of infrastructure, and provide real-time visibility into system health.  Infrastructure as Code (IaC).  IaC allows you to write a script to provision AWS resources. The benefit is that you provision resources in a reproducible manner that saves time.  
 - CloudFormation - CloudFormation allows you to provision AWS resources using Infrastructure as Code (IaC).
 - You can use CloudFormation to automate the creation of EC2 instances in your AWS account.
   - Provides a repeatable process for provisioning resources
@@ -331,9 +330,23 @@ Infrastructure as Code (IaC).  IaC allows you to write a script to provision AWS
   - Works with Chef and Puppet automation platforms
 
 #### Messaging and Integration
+Coupling defines the interdependencies or connections between components of a system. Loose coupling helps reduce the risk of cascading failures between components. Queues are used to implement loosely coupled systems.
 - Simple Queue Service (SQS) - SQS is a message queuing service that allows you to build loosely coupled systems.
+- SQS lets you build an app that is loosely coupled, allowing components to send, store, and receive messages. The use of a messaging queue helps to improve performance and scalability. 
+  - Allows component-to-component communication using messages
+  - Multiple components (or producers) can add messages to the queue
+  - Messages are processed in an asynchronous manner. 
+
+There are often times that users of your applications need to be notified when certain events happen.SNS works with CloudWatch when an alarm's metric threshold is breached to send an email.
 - Simple Notification Service (SNS) - SNS allows you to send emails and text messages from your applications.
+- SNS works with CloudWatch when an alarm's metric threshold is breached to send an email.
+  - Send email and text messages
+  - Publish messages to a topic
+  - Subscribers receive messages
 - Simple Email Service (SES) - SES is an email service that allows you to send richly formatted HTML emails from your applications.
+- SES allows you to send richly formatted HTML emails in bulk and gain valuable insights about the effectiveness of your campaign.
+  - Ideal choice for marketing campaigns or professional emails
+  - Unlike SNS, SES sends HTML emails
 
 #### Auditing, Monitoring, and Logging
 - CloudWatch - CloudWatch is a collection of services that help you monitor and observe your cloud resources.
