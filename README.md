@@ -311,10 +311,24 @@ Artificial intelligence (AI) teaches computers to do things that normally requir
   - Contains issue tracking dashboard
 
 
-#### Deployment and Infrastucture Management
+#### Deployment and Infrastucture Management  
+These services help you quickly stand up new applications,automate the management of infrastructure, and provide real-time visibility into system health.  
+Infrastructure as Code (IaC).  IaC allows you to write a script to provision AWS resources. The benefit is that you provision resources in a reproducible manner that saves time.  
 - CloudFormation - CloudFormation allows you to provision AWS resources using Infrastructure as Code (IaC).
+- You can use CloudFormation to automate the creation of EC2 instances in your AWS account.
+  - Provides a repeatable process for provisioning resources
+  - Works with most AWS services
+  - Create templates for the resources you want to provision
 - Elastic Beanstalk - Elastic Beanstalk allows you to deploy your web applications and web services to AWS.
+- After you upload your Java code, Elastic Beanstalk deploys it and handles capacity provisioning, load balancing, and Auto Scaling. Elastic Beanstalk even monitors the health of your application. 
+  - Orchestration service that provisions resources
+  - Automatically handles the deployment
+  - Monitors application health via a health dashboard
 - OpsWorks -OpsWorks allows you to use Chef or Puppet to automate the configuration of your servers and deploy code.
+- OpsWorks allows you to define software installation scripts and automate configuration for your application servers.
+  - Deploy code and manage applications
+  - Manage on-premises servers or EC2 instances in AWS Cloud
+  - Works with Chef and Puppet automation platforms
 
 #### Messaging and Integration
 - Simple Queue Service (SQS) - SQS is a message queuing service that allows you to build loosely coupled systems.
