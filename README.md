@@ -275,18 +275,41 @@ Artificial intelligence (AI) teaches computers to do things that normally requir
   - Powers Amazon Alexa
 
 #### Developer Tools
-- Cloud9 - Cloud9 allows you to write code within an integrated development environment (IDE) from within your web browser.  
+- Cloud9 - Cloud9 allows you to write code within an integrated development environment (IDE) from within your web browser.
+- Cloud9 preconfigures the development environment with the needed SDKs and libraries. You can easily write the code for your Lambda function directly in your web browser.   
   - Integrated development environment (IDE)
   - Write and debug code
   - Supports popular programming languages
 - CodeCommit - CodeCommit is a source control system for private Git repositories. 
+- CodeCommit can be used to manage source code and the different versions of application files.  CodeCommit is similar to GitHub
   - Create repositories to store code 
   - Commit, branch, and merge code
   - Collaborate with other software developers
-- CodeDeploy - CodeDeploy manages the deployment of code to compute services in the cloud or on-premises.
 - CodeBuild - CodeBuild allows you to build and test your application source code.
+- CodeBuild allows you to run as many parallel streams of tests as needed, allowing you to deploy your changes to production more quickly. 
+  -  Compiles source code and runs tests 
+  -  Enables continuous integration and delivery
+  -  Produces build artifacts ready to be deployed
+- CodeDeploy - CodeDeploy manages the deployment of code to compute services in the cloud or on-premises.
+- CodeDeploy eliminates the downtime of your application when deploying a new version due to its rolling deployments.
+  - Deploys code to EC2, Fargate, Lambda, and on-premises
+  - Maintains application uptime
 - CodePipeline - CodePipeline automates the software release process
+- When combined with other developer tools, CodePipeline helps development teams implement DevOps practices that automate testing and the movement of code to production. 
+  - Quickly deliver new features and updates
+  - Integrates with CodeBuild to run builds and unit tests 
+  - Integrates with CodeCommit to retrieve source code
+  - Integrates with CodeDeploy to deploy your changes
 - X-Ray - X-Ray helps you debug production applications.
+- X-Ray can help you map requests made to your RDS database from within your application. You can track information about the SQL queries generated and more.
+  - Analyze and debug production applications
+  - Map application components
+  - View requests end to end
+- CodeStar helps developers collaboratively work on development projects.
+  - Developers connect their development environment
+  - ntegrates with CodeCommit, CodeBuild, and CodeDeploy
+  - Contains issue tracking dashboard
+
 
 #### Deployment and Infrastucture Management
 - CloudFormation - CloudFormation allows you to provision AWS resources using Infrastructure as Code (IaC).
