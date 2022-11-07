@@ -249,6 +249,19 @@ Networking connects computers together and allows for the sharing of data and ap
   - Supports highly connected datasets like social media networks
   - Fully managed and serverless
   - Fast and reliable
+- Studying for the Exam
+  - RDS
+    - RDS is only for relational databases. Don't forget the supported database engines: Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle Database, and SQL Server.
+  - DynamoDB
+    - Going into the exam, don't forget DynamoDB is a NoSQL database.
+  - Aurora
+    - Don't forget Aurora only supports PostgreSQL and MySQL.
+  - ElastiCache
+    - Keep in mind that ElastiCache is an in-memory datastore.
+  - Neptune
+    - Don't forget Neptune helps you create social media graphs.
+  - DocumentDB
+    - Keep in mind that DocumentDB supports MongoDB.
 
 #### Migration and Transfer
 - Database Migration Service (DMS) - DMS helps you migrate databases to or within AWS.
@@ -284,6 +297,15 @@ Networking connects computers together and allows for the sharing of data and ap
     - Multi-petabyte or exabyte scale
     - Data loaded to S3
     - Securely transported
+ - Studying for the Exam
+   - Snowball Edge
+     - When going into the exam, don't forget the services natively supported by Snowball Edge, like EC2 and Lambda.
+   - Snowball
+     - Remember that Snowball transfers petabytes of data and is cheaper than transferring over the internet
+   - Snowmobile
+     - Don't forget Snowmobile is the largest member of the transport family and supports exabyte-scale data.
+   - DataSync
+     - Don't forget DataSync transfers data online and can be used to replicate data cross-Region or cross-accoun
 
 #### Analytics
 - A data warehouse is a data storage solution that aggregates massive amounts of historical data from disparate sources.
@@ -322,8 +344,11 @@ Networking connects computers together and allows for the sharing of data and ap
 - Analytics are good for:
   - Search data in S3.  Athena helps you query historical data stored in S3 as if they were relational data using standard SQL.
   - Log Analytics. Kinesis helps you analyze logs in near real time for application monitoring or fraud detection.
-
-
+- Studying for the Exam
+  - Athena
+    - Going into the exam, don't forget Athena is used to query S3.
+  - Redshift
+    - Going into the exam, don't forget the real-world use cases of Redshift.
 
 #### Machine Learning
 Artificial intelligence (AI) teaches computers to do things that normally require human intelligence. 
@@ -355,6 +380,11 @@ Artificial intelligence (AI) teaches computers to do things that normally requir
   - Build highly engaging chatbots
   - Powers Amazon Alexa
   - Amazon used the same technologies that power Lex to integrate Amazon Alexa with the Echo device.
+- Studying for the Exam
+  - Comprehend
+    - Don't forget Comprehend is used for natural language processing (NLP).
+  - Rekognition 
+    - Don't forget Rekognition processes videos and images.
 
 #### Developer Tools
 Software developers use tools to accelerate the  software development and release cycle.
@@ -393,6 +423,15 @@ Software developers use tools to accelerate the  software development and releas
   - Developers connect their development environment
   - ntegrates with CodeCommit, CodeBuild, and CodeDeploy
   - Contains issue tracking dashboard
+- Studying for the Exam
+  - CodeCommit
+    - Don't forget CodeCommit offers a service similar to GitHub that works with Git repositories. 
+  - Cloud9
+    - Don't forget Cloud9 offers an integrated development environment (IDE) that runs inside a web browser.
+  - CodeDeploy
+    - Remember that CodeDeploy allows you to deploy an application to servers running on-premises and in the cloud.
+  - CodePipeline
+    - Don't forget CodePipeline allows you to implement a CI/CD pipeline.
 
 
 #### Deployment and Infrastucture Management  
