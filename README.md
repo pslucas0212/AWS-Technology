@@ -53,6 +53,12 @@
     - Compute Time
     - Request Count
     - 1 million always free lambda calls
+- Study for the Exam
+  - Your responsibility 
+    - You are only responsible for your application code. AWS manages servers, coding environment, and language support.
+  - Always free
+    - Even after the free-usage tier expires, you'll have access to 1 million free Lambda calls each month.
+    
 - Fargate - Fargate is a **serverless compute engine** for containers
   - Manage containers like docker
   - Scale automatically
@@ -68,7 +74,15 @@
   - Hybrid experience
   - Access cloud services and APIs to develop apps on-premise
 - Batch - Batch allows you to process large workloads in smaller chunks (or batches).  Batch is a **compute** service.  Dynamically provisions instances based on volumes
-
+- Studying for the Exam
+  - Outposts
+    - AWS Outposts supports a hybrid deployment model.
+  - Lightsail
+    - Amazon Lightsail is a compute service that is used to quickly launch preconfigured applications for small projects.
+  - Fargate
+    - AWS Fargate is considered serverless and is used to manage containers.
+  - Batch
+    - AWS Batch is a compute service that is used to process large workloads in smaller batches.
  
 
 #### Storage
@@ -98,6 +112,12 @@ Companies today need to collect, store, and analyze the data they've accumulated
     - Data archive
     - Analytic systems
     - Mobile apps
+- Studying for the Exam
+  - S3
+    - S3 is a regional service but has a global namespace. 
+  - S3 storage classes
+    - S3 offers unlimited storage with many storage classes. Understand the use cases for each storage class. 
+   
 - EBS - Elastic Block Storage - EBS is a storage device (called a volume) that can be attached to (or removed from) your instance.
   - Data persists when instances is not running
   - Tied to one AZ
@@ -111,6 +131,46 @@ Companies today need to collect, store, and analyze the data they've accumulated
   - Connect on-premises with the cloud
   - Move backups to the loud
 - AWS Backup - Backup helps you manage data backups across multiple data services.  Integrates with EC2, EBS, EFS and more.  Backup plan includes frequency and retention
+- Studying for the Exam
+  - EFS
+    - Don't forget EFS only supports Linux file systems.
+  - Instance store
+    - Don't forget instance store volumes are ephemeral or temporary.
+  - EBS
+    - Understand the use cases for EBS.
+  - Storage Gateway
+    - Storage Gateway supports hybrid models.
+
+#### Content Delivery
+A CDN is a mechanism to deliver content quickly and efficiently based on geographic location.  Latency simply means the time it takes to respond to a request.  Low latency is good!  
+
+- CloudFront - CloudFront is a CDN that delivers data and applications globally with low latency.
+  - Content globally available or restrict base on location
+  - Speeds up delivery of static and dynamic web content
+  - edge locations to cache content
+  - Good for:
+    - S3 static websites
+    - Prevent Attacks - DDOS and geo restictions
+    - IP address blocking
+  - If data not available at the edge, CloudFront retreives data from the origin
+- Amazon Global Accelerator - Global Accelerator sends your users through the AWS global network when accessing your content, speeding up delivery.
+  - Improves latency and availability of single-Region applications
+  - Sends traffic through the AWS global network infrastructure
+  - 60% performance boost
+  - Automatically re-routes traffic to healthy available regional endpoints
+- S3 Transfer Acceleration - S3 Transfer Acceleration improves content uploads and downloads to and from S3 buckets.
+  - Fast transfer of files over long distances
+  - Uses CloudFront’s globally distributed edge locations
+  - Customers around the world can upload to a central bucket
+- Studying for the Exam
+  - CloudFront
+    - Don't forget CloudFront allows for global distribution of content.
+  - Security Features
+    - Don't forget CloudFront has security features like DDoS protection and geo-restriction.
+  - Global Accelerator
+    - Remember Global Accelerator provides low latency.
+  - S3 Transfer Acceleration
+    - Remember S3 Transfer Acceleration provides fast transfer of files over long distances.
 
 #### Networking
 Networking connects computers together and allows for the sharing of data and applications, around the globe, in a secure manner using virtual routers, firewalls, and network management services.   
@@ -153,27 +213,7 @@ Networking connects computers together and allows for the sharing of data and ap
   - Integrate with services like Lambda
 
 
-#### Content Delivery
-A CDN is a mechanism to deliver content quickly and efficiently based on geographic location.  Latency simply means the time it takes to respond to a request.  Low latency is good!  
 
-- CloudFront - CloudFront is a CDN that delivers data and applications globally with low latency.
-  - Content globally available or restrict base on location
-  - Speeds up delivery of static and dynamic web content
-  - edge locations to cache content
-  - Good for:
-    - S3 static websites
-    - Prevent Attacks - DDOS and geo restictions
-    - IP address blocking
-  - If data not available at the edge, CloudFront retreives data from the origin
-- Amazon Global Accelerator - Global Accelerator sends your users through the AWS global network when accessing your content, speeding up delivery.
-  - Improves latency and availability of single-Region applications
-  - Sends traffic through the AWS global network infrastructure
-  - 60% performance boost
-  - Automatically re-routes traffic to healthy available regional endpoints
-- S3 Transfer Acceleration - S3 Transfer Acceleration improves content uploads and downloads to and from S3 buckets.
-  - Fast transfer of files over long distances
-  - Uses CloudFront’s globally distributed edge locations
-  - Customers around the world can upload to a central bucket
 
 #### Databases
 - Relational Database Service (RDS) - RDS is a service that makes it easy to launch and manage relational databases. Like Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle Database, and SQL Server.
