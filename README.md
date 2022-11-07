@@ -293,7 +293,7 @@ Artificial intelligence (AI) teaches computers to do things that normally requir
   - Amazon used the same technologies that power Lex to integrate Amazon Alexa with the Echo device.
 
 #### Developer Tools
-oftware developers use tools to accelerate the  software development and release cycle.
+Software developers use tools to accelerate the  software development and release cycle.
 - Cloud9 - Cloud9 allows you to write code within an integrated development environment (IDE) from within your web browser.
 - Cloud9 preconfigures the development environment with the needed SDKs and libraries. You can easily write the code for your Lambda function directly in your web browser.   
   - Integrated development environment (IDE)
@@ -325,6 +325,7 @@ oftware developers use tools to accelerate the  software development and release
   - Map application components
   - View requests end to end
 - CodeStar helps developers collaboratively work on development projects.
+- CodeStar can managed the development pipeline
   - Developers connect their development environment
   - ntegrates with CodeCommit, CodeBuild, and CodeDeploy
   - Contains issue tracking dashboard
@@ -347,16 +348,27 @@ These services help you quickly stand up new applications,automate the managemen
   - Deploy code and manage applications
   - Manage on-premises servers or EC2 instances in AWS Cloud
   - Works with Chef and Puppet automation platforms
+- Study for the Exam
+  - CloudFormation
+    - Don't forget CloudFormation supports infrastructure automation using Infrastructure as Code (IaC).
+  - Elastic Beanstalk
+    - Don't forget Elastic Beanstalk is only used to deploy applications to the AWS Cloud — it is not used to deploy applications on-premises.
+  - OpsWorks
+    - Remember that OpsWorks can deploy applications on-premises, and it also automates infrastructure management using Chef or Puppet.
 
 #### Messaging and Integration
-Coupling defines the interdependencies or connections between components of a system. Loose coupling helps reduce the risk of cascading failures between components. Queues are used to implement loosely coupled systems.
+Coupling defines the interdependencies or connections between components of a system. Loose coupling helps reduce the risk of cascading failures between components. Queues are used to implement loosely coupled systems.  Monolithic applications tend to be tightly coupled and microservices tend to be loosely coupled.
 - Simple Queue Service (SQS) - SQS is a message queuing service that allows you to build loosely coupled systems.
 - SQS lets you build an app that is loosely coupled, allowing components to send, store, and receive messages. The use of a messaging queue helps to improve performance and scalability. 
   - Allows component-to-component communication using messages
   - Multiple components (or producers) can add messages to the queue
   - Messages are processed in an asynchronous manner. 
+- Study for the Exam
+  - SQS
+    - Don't forget messages in queues are processed in FIFO order.
+    - Remember that message queues support loose coupling.
 
-There are often times that users of your applications need to be notified when certain events happen.SNS works with CloudWatch when an alarm's metric threshold is breached to send an email.
+There are often times that users of your applications need to be notified when certain events happen. SNS works with CloudWatch when an alarm's metric threshold is breached to send an email.
 - Simple Notification Service (SNS) - SNS allows you to send emails and text messages from your applications.
 - SNS works with CloudWatch when an alarm's metric threshold is breached to send an email.
   - Send email and text messages
@@ -366,6 +378,12 @@ There are often times that users of your applications need to be notified when c
 - SES allows you to send richly formatted HTML emails in bulk and gain valuable insights about the effectiveness of your campaign.
   - Ideal choice for marketing campaigns or professional emails
   - Unlike SNS, SES sends HTML emails
+- Study for the Exam
+  - SNS
+    - Don't forget SNS sends text messages and plain text emails.
+  - SES
+    - Remember that SES sends HTML-formatted emails for marketing campaigns.
+
 
 #### Auditing, Monitoring, and Logging
 These services give you insight into how well your systems are performing and help you proactively find and resolve errors. 
