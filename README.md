@@ -27,7 +27,7 @@
   - AWS Console - You're able to configure and manage your instances via a web browser.
   - SSH allows you to establish a secure connection to your instance from your local laptop. 
   - EC2 Instance Connect (EIC).  EIC allows you to use IAM policies to control SSH access to your instances, removing the need to manage SSH keys.
-  - AWS Systems Manager - Systems Manager allows you to manage your EC2 instances via a web browser or the AWS CLI.
+  - AWS Systems Manager - Systems Manager allows you to manage your EC2 instances via a web browser or the AWS CLI
 - Study for the Exam
   - EC2 pricing options
     - Understand On-Demand, Spot, Reserved Instances, Dedicated Hosts, and Savings Plans.
