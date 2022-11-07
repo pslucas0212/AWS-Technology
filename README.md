@@ -400,3 +400,8 @@ These services give you insight into how well your systems are performing and he
   - Track activity through the console, SDKs, and CLI
   - Identify which user made changes
   - Detect unusual activity in your account
+- Study for the Exam
+  - CloudWatch
+    - Don't forget you can use CloudWatch to monitor your EC2 instances and notify you when certain events occur.
+  - CloudTrail
+    - Don't forget the things you can track with CloudTrail: username, event time and name, IP address, access key, Region, and error code.
