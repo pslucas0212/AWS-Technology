@@ -28,6 +28,20 @@
   - SSH allows you to establish a secure connection to your instance from your local laptop. 
   - EC2 Instance Connect (EIC).  EIC allows you to use IAM policies to control SSH access to your instances, removing the need to manage SSH keys.
   - AWS Systems Manager - Systems Manager allows you to manage your EC2 instances via a web browser or the AWS CLI.
+- Study for the Exam
+  - EC2 pricing options
+    - Understand On-Demand, Spot, Reserved Instances, Dedicated Hosts, and Savings Plans.
+  - Horizontal scaling vs. vertical scaling
+    - Horizontal scaling (or scaling out) adds or replaces instances, while vertical scaling (or scaling up) upgrades an existing instance.
+  - Know the types of load balancers
+    - Classic, Application, Gateway, and Network
+  - Understand the benefits of Auto Scaling
+    - Remember Auto Scaling improves the availability of your applications, and don't confuse it with load balancing.
+  - Understand real-world usage of EC2 instances
+    - Deploying a database or a web application
+  - Understand how to connect to an EC2 instance from your local machine
+   - A key pair is needed to access an EC2 instance from your local machine.  
+   
 - Lambda - Lambda is a serverless compute service that lets you run code without managing servers.
   - Author application code called functions
     - Supports popular programming languages: Java, GO, PowerShell, Node. JS, C#, Python, and Ruby
@@ -54,15 +68,7 @@
   - Hybrid experience
   - Access cloud services and APIs to develop apps on-premise
 - Batch - Batch allows you to process large workloads in smaller chunks (or batches).  Batch is a **compute** service.  Dynamically provisions instances based on volumes
-- Study for the Exam
-  - EC2 pricing options
-    - Understand On-Demand, Spot, Reserved Instances, Dedicated Hosts, and Savings Plans.
-  - Horizontal scaling vs. vertical scaling
-    - Horizontal scaling (or scaling out) adds or replaces instances, while vertical scaling (or scaling up) upgrades an existing instance.
-  - Know the types of load balancers
-    - Classic, Application, Gateway, and Network
-  - Understand the benefits of Auto Scaling
-    - Remember Auto Scaling improves the availability of your applications, and don't confuse it with load balancing.
+
  
 
 #### Storage
