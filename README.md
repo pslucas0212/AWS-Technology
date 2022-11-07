@@ -54,6 +54,16 @@
   - Hybrid experience
   - Access cloud services and APIs to develop apps on-premise
 - Batch - Batch allows you to process large workloads in smaller chunks (or batches).  Batch is a **compute** service.  Dynamically provisions instances based on volumes
+- Study for the Exam
+  - EC2 pricing options
+    - Understand On-Demand, Spot, Reserved Instances, Dedicated Hosts, and Savings Plans.
+  - Horizontal scaling vs. vertical scaling
+    - Horizontal scaling (or scaling out) adds or replaces instances, while vertical scaling (or scaling up) upgrades an existing instance.
+  - Know the types of load balancers
+    - Classic, Application, Gateway, and Network
+  - Understand the benefits of Auto Scaling
+    - Remember Auto Scaling improves the availability of your applications, and don't confuse it with load balancing.
+ 
 
 #### Storage
 Companies today need to collect, store, and analyze the data they've accumulated over the years on a massive scale. Storage services in the cloud provide a place for companies to store data.  
