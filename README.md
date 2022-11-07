@@ -173,21 +173,8 @@ A CDN is a mechanism to deliver content quickly and efficiently based on geograp
     - Remember S3 Transfer Acceleration provides fast transfer of files over long distances.
 
 #### Networking
-Networking connects computers together and allows for the sharing of data and applications, around the globe, in a secure manner using virtual routers, firewalls, and network management services.   
+Networking connects computers together and allows for the sharing of data and applications, around the globe, in a secure manner using virtual routers, firewalls, and network management services.  
 
-- Route 53 - Route 53 is a DNS service that routes users to applications.
-  - Domain name registration
-  - Performs health checks on AWS resources
-  - Supports hybrid cloud architectures
-- AWS Direct Connect is a dedicated physical network connection from data center to AWS
-  - Dedicated physical network connection
-  - Connects your on-premises data center to AWS
-  - Data travels over a private network
-  - Supports a hybrid environment
-  - Good for:
-    - Large datasets
-    - Business Critical data
-    - Hybrid Model
 - Amazon Virtual Private Cloud (VPC) - VPC is a foundational service that allows you to create a secure private network in the AWS Cloud where you launch your resources.
   - Private virtual network
   - Launch resources like EC2 instances inside the VPC. In a subnet
@@ -202,6 +189,23 @@ Networking connects computers together and allows for the sharing of data and ap
     - NACL
     - Router
     - InternetGateway
+- Studying for the Exam
+  - VPC
+    - Don't forget an internet gateway allows traffic to the public internet and peering connects 2 VPCs together.
+
+- Route 53 - Route 53 is a DNS service that routes users to applications.
+  - Domain name registration
+  - Performs health checks on AWS resources
+  - Supports hybrid cloud architectures
+- AWS Direct Connect is a dedicated physical network connection from data center to AWS
+  - Dedicated physical network connection
+  - Connects your on-premises data center to AWS
+  - Data travels over a private network
+  - Supports a hybrid environment
+  - Good for:
+    - Large datasets
+    - Business Critical data
+    - Hybrid Model
 - Virtual Private Network (VPN) - Site-to-Site VPN creates a secure connection between your internal networks and your AWS VPCs. 
   - Similar to Direct Connect, but data travels over the public internet
   - Data is automatically encrypted
@@ -211,9 +215,13 @@ Networking connects computers together and allows for the sharing of data and ap
 - API Gateway - API Gateway allows you to build and manage APIs.
   - Share data between systems
   - Integrate with services like Lambda
-
-
-
+- Studying for the Exam
+  - Route 53
+    - Don't forget Route 53 performs health checks on AWS resources and supports a hybrid model.
+  - Site-to-Site VPN
+    - Remember that a Site-to-Site VPN supports a hybrid model. Don't forget to review components such as the virtual private gateway and customer gateway.
+  - Direct Connect
+    - Remember that Direct Connect supports a hybrid model.
 
 #### Databases
 - Relational Database Service (RDS) - RDS is a service that makes it easy to launch and manage relational databases. Like Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle Database, and SQL Server.
