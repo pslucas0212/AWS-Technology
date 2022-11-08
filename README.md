@@ -352,30 +352,30 @@ A data warehouse is a data storage solution that aggregates massive amounts of h
 
 #### Machine Learning
 Artificial intelligence (AI) teaches computers to do things that normally require human intelligence. 
-- Rekognition - Rekognition allows you to automate your image and video analysis.
+- **Rekognition** - Rekognition allows you to automate your image and video analysis.
   - Image and video analysis
   - Identify custom labels in images and videos
   - Face and text detection in images and videos
-- Comprehend - Comprehend is a natural-language processing (NLP) service that finds relationships in text.
+- **Comprehend** - Comprehend is a natural-language processing (NLP) service that finds relationships in text.
   - Natural-language processing (NLP) service 
   - Uncovers insights and relationships
   - Analyzes text
-- SageMaker - SageMaker helps you build, train, and deploy machine learning models quickly.
+- **SageMaker** - SageMaker helps you build, train, and deploy machine learning models quickly.
   - Prepare data for models
   - Train and deploy models
   - Provides Deep Learning AMIs
   - Companies like Netflix and Amazon use machine learning models to recommend movies and products to buy. SageMaker is a great tool for creating these models.
-- Polly - Polly turns text into speech.
+- **Polly** - Polly turns text into speech.
   - Mimics natural-sounding human speech
   - Several voices across many languages
   - Can create a custom voice
   - Polly could convert the text on a blog post to speech that could then be downloaded or replayed in MP3 format. Audio is often a great complement to written communication.
-- Translate - Translate provides language translation
+- **Translate** - Translate provides language translation
   - Provides real-time and batch language translation
   - Supports many languages
   - Translates many content formats
   - translate allows you to add localization to your applications to support your diverse user base. Translate supports several popular languages.
-- Lex - Lex helps you build conversational interfaces like chatbots.
+- **Lex** - Lex helps you build conversational interfaces like chatbots.
   - Recognizes speech and understands language
   - Build highly engaging chatbots
   - Powers Amazon Alexa
@@ -388,37 +388,37 @@ Artificial intelligence (AI) teaches computers to do things that normally requir
 
 #### Developer Tools
 Software developers use tools to accelerate the  software development and release cycle.
-- Cloud9 - Cloud9 allows you to write code within an integrated development environment (IDE) from within your web browser.
+- **Cloud9** - Cloud9 allows you to write code within an integrated development environment (IDE) from within your web browser.
 - Cloud9 preconfigures the development environment with the needed SDKs and libraries. You can easily write the code for your Lambda function directly in your web browser.   
   - Integrated development environment (IDE)
   - Write and debug code
   - Supports popular programming languages
-- CodeCommit - CodeCommit is a source control system for private Git repositories. 
+- **CodeCommit** - CodeCommit is a source control system for private Git repositories. 
 - CodeCommit can be used to manage source code and the different versions of application files.  CodeCommit is similar to GitHub
   - Create repositories to store code 
   - Commit, branch, and merge code
   - Collaborate with other software developers
-- CodeBuild - CodeBuild allows you to build and test your application source code.
+- **CodeBuild** - CodeBuild allows you to build and test your application source code.
 - CodeBuild allows you to run as many parallel streams of tests as needed, allowing you to deploy your changes to production more quickly. 
   -  Compiles source code and runs tests 
   -  Enables continuous integration and delivery
   -  Produces build artifacts ready to be deployed
-- CodeDeploy - CodeDeploy manages the deployment of code to compute services in the cloud or on-premises.
+- **CodeDeploy** - CodeDeploy manages the deployment of code to compute services in the cloud or on-premises.
 - CodeDeploy eliminates the downtime of your application when deploying a new version due to its rolling deployments.
   - Deploys code to EC2, Fargate, Lambda, and on-premises
   - Maintains application uptime
-- CodePipeline - CodePipeline automates the software release process
+- **CodePipeline** - CodePipeline automates the software release process
 - When combined with other developer tools, CodePipeline helps development teams implement DevOps practices that automate testing and the movement of code to production. 
   - Quickly deliver new features and updates
   - Integrates with CodeBuild to run builds and unit tests 
   - Integrates with CodeCommit to retrieve source code
   - Integrates with CodeDeploy to deploy your changes
-- X-Ray - X-Ray helps you debug production applications.
+- **X-Ray** - X-Ray helps you debug production applications.
 - X-Ray can help you map requests made to your RDS database from within your application. You can track information about the SQL queries generated and more.
   - Analyze and debug production applications
   - Map application components
   - View requests end to end
-- CodeStar helps developers collaboratively work on development projects.
+- **CodeStar** helps developers collaboratively work on development projects.
 - CodeStar can managed the development pipeline
   - Developers connect their development environment
   - ntegrates with CodeCommit, CodeBuild, and CodeDeploy
@@ -436,17 +436,17 @@ Software developers use tools to accelerate the  software development and releas
 
 #### Deployment and Infrastucture Management  
 These services help you quickly stand up new applications,automate the management of infrastructure, and provide real-time visibility into system health.  Infrastructure as Code (IaC).  IaC allows you to write a script to provision AWS resources. The benefit is that you provision resources in a reproducible manner that saves time.  
-- CloudFormation - CloudFormation allows you to provision AWS resources using Infrastructure as Code (IaC).
+- **CloudFormation** - CloudFormation allows you to provision AWS resources using Infrastructure as Code (IaC).
 - You can use CloudFormation to automate the creation of EC2 instances in your AWS account.
   - Provides a repeatable process for provisioning resources
   - Works with most AWS services
   - Create templates for the resources you want to provision
-- Elastic Beanstalk - Elastic Beanstalk allows you to deploy your web applications and web services to AWS.
+- **Elastic Beanstalk** - Elastic Beanstalk allows you to deploy your web applications and web services to AWS.
 - After you upload your Java code, Elastic Beanstalk deploys it and handles capacity provisioning, load balancing, and Auto Scaling. Elastic Beanstalk even monitors the health of your application. 
   - Orchestration service that provisions resources
   - Automatically handles the deployment
   - Monitors application health via a health dashboard
-- OpsWorks -OpsWorks allows you to use Chef or Puppet to automate the configuration of your servers and deploy code.
+- **OpsWorks** -OpsWorks allows you to use Chef or Puppet to automate the configuration of your servers and deploy code.
 - OpsWorks allows you to define software installation scripts and automate configuration for your application servers.
   - Deploy code and manage applications
   - Manage on-premises servers or EC2 instances in AWS Cloud
@@ -461,7 +461,7 @@ These services help you quickly stand up new applications,automate the managemen
 
 #### Messaging and Integration
 Coupling defines the interdependencies or connections between components of a system. Loose coupling helps reduce the risk of cascading failures between components. Queues are used to implement loosely coupled systems.  Monolithic applications tend to be tightly coupled and microservices tend to be loosely coupled.
-- Simple Queue Service (SQS) - SQS is a message queuing service that allows you to build loosely coupled systems.
+- **Simple Queue Service (SQS)** - SQS is a message queuing service that allows you to build loosely coupled systems.
 - SQS lets you build an app that is loosely coupled, allowing components to send, store, and receive messages. The use of a messaging queue helps to improve performance and scalability. 
   - Allows component-to-component communication using messages
   - Multiple components (or producers) can add messages to the queue
@@ -472,12 +472,12 @@ Coupling defines the interdependencies or connections between components of a sy
     - Remember that message queues support loose coupling.
 
 There are often times that users of your applications need to be notified when certain events happen. SNS works with CloudWatch when an alarm's metric threshold is breached to send an email.
-- Simple Notification Service (SNS) - SNS allows you to send emails and text messages from your applications.
+- **Simple Notification Service (SNS)** - SNS allows you to send emails and text messages from your applications.
 - SNS works with CloudWatch when an alarm's metric threshold is breached to send an email.
   - Send email and text messages
   - Publish messages to a topic
   - Subscribers receive messages
-- Simple Email Service (SES) - SES is an email service that allows you to send richly formatted HTML emails from your applications.
+- **Simple Email Service (SES)** - SES is an email service that allows you to send richly formatted HTML emails from your applications.
 - SES allows you to send richly formatted HTML emails in bulk and gain valuable insights about the effectiveness of your campaign.
   - Ideal choice for marketing campaigns or professional emails
   - Unlike SNS, SES sends HTML emails
@@ -490,14 +490,14 @@ There are often times that users of your applications need to be notified when c
 
 #### Auditing, Monitoring, and Logging
 These services give you insight into how well your systems are performing and help you proactively find and resolve errors. 
-- CloudWatch - CloudWatch is a collection of services that help you monitor and observe your cloud resources.
+**CloudWatch** - CloudWatch is a collection of services that help you monitor and observe your cloud resources.
 - CloudWatch Alarms can notify you if an EC2 instance goes into the stopped state or usage goes above a certain utilization.
 - CloudWatch event rule can notify you when root user API calls are detected in your account indicating root user activity.
   - Collects metrics, logs, and events
   - Detect anomalies in your environmentCreate a CloudWatch event rule to notify you when root user API calls are detected in your account indicating root user activity.
   - Set alarms
   - Visualize logs
-- CloudTrail - CloudTrail tracks user activity and API calls within your account.
+**CloudTrail** - CloudTrail tracks user activity and API calls within your account.
 - You can troubleshoot events over the past 90 days using the CloudTrail event history log to find the specific time an event occurred on a per-Region basis. You can create a custom trail to extend past 90 days.
   - Log and retain account activity
   - Track activity through the console, SDKs, and CLI
