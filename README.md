@@ -5,7 +5,8 @@
 ### AWS Services
 
 #### Compute
-- **EC2** - Elastic Cloud Compute. EC2 allows you to rent and manage virtual servers in the cloud.  Provision with one click.  Chose pre-configured template from Amazon Machine Image (AMI). Configure and manages EC2 instance from the AWS Management console.  SSH secure connection to laptop.  EC2 Instance Connect (EIC) allows you to use IAM policies to control SSH access without the need to manage SSH keys.  Systems manages connects to EC2 via web browser or AWS CLI.
+  
+**EC2** - Elastic Cloud Compute. EC2 allows you to rent and manage virtual servers in the cloud.  Provision with one click.  Chose pre-configured template from Amazon Machine Image (AMI). Configure and manages EC2 instance from the AWS Management console.  SSH secure connection to laptop.  EC2 Instance Connect (EIC) allows you to use IAM policies to control SSH access without the need to manage SSH keys.  Systems manages connects to EC2 via web browser or AWS CLI.
   - Pricing Options
     - On-demand - Live on-demand fixed billing down to the second
     - Spot
@@ -42,7 +43,8 @@
   - Understand how to connect to an EC2 instance from your local machine
    - A key pair is needed to access an EC2 instance from your local machine.  
    
-- **Lambda** - Lambda is a serverless compute service that lets you run code without managing servers.
+  
+**Lambda** - Lambda is a serverless compute service that lets you run code without managing servers.
   - Author application code called functions
     - Supports popular programming languages: Java, GO, PowerShell, Node. JS, C#, Python, and Ruby
   - Scales automatically
@@ -58,8 +60,9 @@
     - You are only responsible for your application code. AWS manages servers, coding environment, and language support.
   - Always free
     - Even after the free-usage tier expires, you'll have access to 1 million free Lambda calls each month.
-    
-- **Fargate** - Fargate is a **serverless compute engine** for containers
+ 
+   
+ **Fargate** - Fargate is a **serverless compute engine** for containers
   - Manage containers like docker
   - Scale automatically
   - Serverless so you don't worry about managng instances
@@ -88,7 +91,8 @@
 #### Storage
 Companies today need to collect, store, and analyze the data they've accumulated over the years on a massive scale. Storage services in the cloud provide a place for companies to store data.  
 
-- **S3** - Simple Storage Service - S3 is an **object storage service** for the cloud that is highly available.
+
+**S3** - Simple Storage Service - S3 is an **object storage service** for the cloud that is highly available.
   - Objects (files) are stored in buckets (folders)
   - Unlimted storage
   - Objects can be public or private
@@ -118,19 +122,25 @@ Companies today need to collect, store, and analyze the data they've accumulated
   - S3 storage classes
     - S3 offers unlimited storage with many storage classes. Understand the use cases for each storage class. 
    
-- **EBS** - Elastic Block Storage - EBS is a storage device (called a volume) that can be attached to (or removed from) your instance.
+
+**EBS** - Elastic Block Storage - EBS is a storage device (called a volume) that can be attached to (or removed from) your instance.
   - Data persists when instances is not running
   - Tied to one AZ
   - only attached to one instance in the same AZ
   - Good for running a database or long-term storage
 - EC2 Instance store is physically attached to EC2 instance and cannot be removed.  Faster I/O.  Data is lost when EC2 instance is stopped.  Volumes are ephemeral
-- **EFS** - Elastic File System - EFS is a serverless network file system for sharing files.  Supports Linux systems only.  More expensive than EBS.  Acessible across different AZs in same region
+
+
+**EFS** - Elastic File System - EFS is a serverless network file system for sharing files.  Supports Linux systems only.  More expensive than EBS.  Acessible across different AZs in same region
   - Business directories
-  - Lift and Shift
-- **Storage Gateway** - Storage Gateway is a hybrid storage service
+  - Lift and Shift  
+  
+**Storage Gateway** - Storage Gateway is a hybrid storage service
   - Connect on-premises with the cloud
   - Move backups to the loud
-- **AWS Backup** - Backup helps you manage data backups across multiple data services.  Integrates with EC2, EBS, EFS and more.  Backup plan includes frequency and retention
+ 
+ 
+ **AWS Backup** - Backup helps you manage data backups across multiple data services.  Integrates with EC2, EBS, EFS and more.  Backup plan includes frequency and retention
 - Studying for the Exam
   - EFS
     - Don't forget EFS only supports Linux file systems.
@@ -144,7 +154,7 @@ Companies today need to collect, store, and analyze the data they've accumulated
 #### Content Delivery
 A CDN is a mechanism to deliver content quickly and efficiently based on geographic location.  Latency simply means the time it takes to respond to a request.  Low latency is good!  
 
-- **CloudFront** - CloudFront is a CDN that delivers data and applications globally with low latency.
+**CloudFront** - CloudFront is a CDN that delivers data and applications globally with low latency.
   - Content globally available or restrict base on location
   - Speeds up delivery of static and dynamic web content
   - edge locations to cache content
@@ -153,12 +163,16 @@ A CDN is a mechanism to deliver content quickly and efficiently based on geograp
     - Prevent Attacks - DDOS and geo restictions
     - IP address blocking
   - If data not available at the edge, CloudFront retreives data from the origin
-- **Amazon Global Accelerator** - Global Accelerator sends your users through the AWS global network when accessing your content, speeding up delivery.
+
+
+**Amazon Global Accelerator** - Global Accelerator sends your users through the AWS global network when accessing your content, speeding up delivery.
   - Improves latency and availability of single-Region applications
   - Sends traffic through the AWS global network infrastructure
   - 60% performance boost
   - Automatically re-routes traffic to healthy available regional endpoints
-- **S3 Transfer Acceleration** - S3 Transfer Acceleration improves content uploads and downloads to and from S3 buckets.
+
+
+**S3 Transfer Acceleration** - S3 Transfer Acceleration improves content uploads and downloads to and from S3 buckets.
   - Fast transfer of files over long distances
   - Uses CloudFront’s globally distributed edge locations
   - Customers around the world can upload to a central bucket
@@ -175,7 +189,9 @@ A CDN is a mechanism to deliver content quickly and efficiently based on geograp
 #### Networking
 Networking connects computers together and allows for the sharing of data and applications, around the globe, in a secure manner using virtual routers, firewalls, and network management services.  
 
-- **Amazon Virtual Private Cloud (VPC)** - VPC is a foundational service that allows you to create a secure private network in the AWS Cloud where you launch your resources.
+
+
+**Amazon Virtual Private Cloud (VPC)** - VPC is a foundational service that allows you to create a secure private network in the AWS Cloud where you launch your resources.
   - Private virtual network
   - Launch resources like EC2 instances inside the VPC. In a subnet
   - Isolate and protect resources
@@ -193,11 +209,14 @@ Networking connects computers together and allows for the sharing of data and ap
   - VPC
     - Don't forget an internet gateway allows traffic to the public internet and peering connects 2 VPCs together.
 
-- **Route 53** - Route 53 is a DNS service that routes users to applications.
+
+**Route 53** - Route 53 is a DNS service that routes users to applications.
   - Domain name registration
   - Performs health checks on AWS resources
   - Supports hybrid cloud architectures
-- **AWS Direct Connect** is a dedicated physical network connection from data center to AWS
+
+
+**AWS Direct Connect** is a dedicated physical network connection from data center to AWS
   - Dedicated physical network connection
   - Connects your on-premises data center to AWS
   - Data travels over a private network
@@ -206,13 +225,17 @@ Networking connects computers together and allows for the sharing of data and ap
     - Large datasets
     - Business Critical data
     - Hybrid Model
-- **Virtual Private Network (VPN)** - Site-to-Site VPN creates a secure connection between your internal networks and your AWS VPCs. 
+
+
+**Virtual Private Network (VPN)** - Site-to-Site VPN creates a secure connection between your internal networks and your AWS VPCs. 
   - Similar to Direct Connect, but data travels over the public internet
   - Data is automatically encrypted
   - Connects your on-premises data center to AWS
   - Supports a hybrid environment
   - A Site-to-Site VPN makes moving applications to the cloud easier.
-- **API Gateway** - API Gateway allows you to build and manage APIs.
+
+
+**API Gateway** - API Gateway allows you to build and manage APIs.
   - Share data between systems
   - Integrate with services like Lambda
 - Studying for the Exam
@@ -224,27 +247,39 @@ Networking connects computers together and allows for the sharing of data and ap
     - Remember that Direct Connect supports a hybrid model.
 
 #### Databases
-- **Relational Database Service (RDS)** - RDS is a service that makes it easy to launch and manage relational databases. Like Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle Database, and SQL Server.
+
+
+**Relational Database Service (RDS)** - RDS is a service that makes it easy to launch and manage relational databases. Like Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle Database, and SQL Server.
   - Offers high availability and fault tolerance using Multi-AZ deployment option
   - AWS manages the database with automatic software patching,  automated backups, operating system maintenance, and more.
   - Launches read replicas across regions to provide enhanced performance and durability
-- **Aurora** - Aurora is a relational database compatible with MySQL and PostgreSQL that was created by AWS.
+
+
+**Aurora** - Aurora is a relational database compatible with MySQL and PostgreSQL that was created by AWS.
   - Scales automatically while  providing durability and high availability 
   - Managed by RDS
-- **DocumentDB** - DocumentDB is a fully managed document database that supports MongoDB.
+
+
+**DocumentDB** - DocumentDB is a fully managed document database that supports MongoDB.
   - Document database
   - MongoDB Compatible
   - Fully managed and serverless
   - non-relational
-- **DynamoDB** - DynamoDB is a fully managed NoSQL key-value and document database.
+
+
+**DynamoDB** - DynamoDB is a fully managed NoSQL key-value and document database.
   - Fully managed and serverless
   - Scales automatically to massive workloads with fast performance
   - non-relational
-- **ElastiCache** - ElastiCache is a fully managed in-memory datastore compatible with Redis or Memcached.
+
+
+**ElastiCache** - ElastiCache is a fully managed in-memory datastore compatible with Redis or Memcached.
   - In-memory datastore
   - Data can be lost
   - Offers high performance and low latency
-- **Neptune** - Neptune is a fully managed graph database that supports highly connected datasets. Create social media graphs
+
+
+**Neptune** - Neptune is a fully managed graph database that supports highly connected datasets. Create social media graphs
   - Graph database service
   - Supports highly connected datasets like social media networks
   - Fully managed and serverless
@@ -264,7 +299,9 @@ Networking connects computers together and allows for the sharing of data and ap
     - Keep in mind that DocumentDB supports MongoDB.
 
 #### Migration and Transfer
-- **Database Migration Service** (DMS) - DMS helps you migrate databases to or within AWS.
+
+
+**Database Migration Service** (DMS) - DMS helps you migrate databases to or within AWS.
   - Migrate on-premises databases to AWS
   - Continuous data replication
   - Supports homogeneous and heterogeneous migrations
@@ -273,16 +310,22 @@ Networking connects computers together and allows for the sharing of data and ap
     - Oracle to Aurora MySQL
     - Oracle on-prem to RDS Oracle
     - RDS Oracle to Aurora MySQL
-- **Server Migration Service (SMS)** - SMS allows you to migrate on-premises servers to AWS.
+
+
+**Server Migration Service (SMS)** - SMS allows you to migrate on-premises servers to AWS.
   - Migrates on-premises servers to AWS
   - Server saved as a new Amazon Machine Image (AMI)
   - Use AMI to launch servers as EC2 instances
-- **DataSync** - DataSync allows for online data transfer from on-premises to AWS storage services like S3 or EFS.
+
+
+**DataSync** - DataSync allows for online data transfer from on-premises to AWS storage services like S3 or EFS.
   - Migrates data from on-premises to AWS
   - Copy data over Direct Connect or the internet
   - Copy data between AWS storage services
   - Replicate data cross-Region or cross-account 
-- **Snow Family** - The Snow Family allows you to transfer large amounts of on-premises data to AWS using a physical device.
+
+
+**Snow Family** - The Snow Family allows you to transfer large amounts of on-premises data to AWS using a physical device.
   - Snowcone
     - Smallest member of data transport devices
     - 8 terabytes of usable storage
@@ -310,7 +353,9 @@ Networking connects computers together and allows for the sharing of data and ap
 #### Analytics
 A data warehouse is a data storage solution that aggregates massive amounts of historical data from disparate sources.
   - Data warehouses support querying, reporting, analytics, and business intelligence. They are not used for transaction processing.
-- **Redshift** -  Redshift is a scalable data warehouse solution.
+
+
+**Redshift** -  Redshift is a scalable data warehouse solution.
   - Data warehousing solution
   - Improves speed and efficiency
   - Handles exabyte-scale data
@@ -318,27 +363,39 @@ A data warehouse is a data storage solution that aggregates massive amounts of h
     - Data consolidation - When you need to consolidate multiple data sources for reporting
     - Relational Databases - When you want to run a database that doesn't require real-time transaction processing (insert, update, and delete)
 - Analytics is the act of querying or processing your data.
-- **Athena** - Athena is a query service for Amazon S3.
+
+
+**Athena** - Athena is a query service for Amazon S3.
   - Query service
   - Analyze S3 data using SQL
   - Pay per query
   - Considered serverless
-- **Glue** - Glue prepares your data for analytics.
+
+
+**Glue** - Glue prepares your data for analytics.
   - Extract, transform, load (ETL) service
   - Prepare and load data
   - Helps to better understand your data
-- **Kinesis** - Kinesis allows you to analyze data and video streams in real time.
+
+
+ **Kinesis** - Kinesis allows you to analyze data and video streams in real time.
   - Analyze real-time, streaming data
   - Supports video, audio, application logs, website clickstreams, and IoT
-- **MapReduce (EMR)** - EMR helps you process large amounts of data.
+
+
+**MapReduce (EMR)** - EMR helps you process large amounts of data.
   - Process big data
   - Analyze data using Hadoop
   - Works with big data frameworks
-- **Data Pipeline** - Data Pipeline helps you move data between compute and storage services running either on AWS or on-premises.
+
+
+**Data Pipeline** - Data Pipeline helps you move data between compute and storage services running either on AWS or on-premises.
   - Moves data at specific intervals
   - Moves data based on conditions
   - Sends notifications on success or failure
-- **QuickSight** helps you visualize your data.
+ 
+ 
+ **QuickSight** helps you visualize your data.
   - Build interactive dashboards
   - Embed dashboards in your applications
 - Analytics are good for:
@@ -352,30 +409,42 @@ A data warehouse is a data storage solution that aggregates massive amounts of h
 
 #### Machine Learning
 Artificial intelligence (AI) teaches computers to do things that normally require human intelligence. 
-- **Rekognition** - Rekognition allows you to automate your image and video analysis.
+
+
+**Rekognition** - Rekognition allows you to automate your image and video analysis.
   - Image and video analysis
   - Identify custom labels in images and videos
   - Face and text detection in images and videos
-- **Comprehend** - Comprehend is a natural-language processing (NLP) service that finds relationships in text.
+
+
+**Comprehend** - Comprehend is a natural-language processing (NLP) service that finds relationships in text.
   - Natural-language processing (NLP) service 
   - Uncovers insights and relationships
   - Analyzes text
-- **SageMaker** - SageMaker helps you build, train, and deploy machine learning models quickly.
+
+
+**SageMaker** - SageMaker helps you build, train, and deploy machine learning models quickly.
   - Prepare data for models
   - Train and deploy models
   - Provides Deep Learning AMIs
   - Companies like Netflix and Amazon use machine learning models to recommend movies and products to buy. SageMaker is a great tool for creating these models.
-- **Polly** - Polly turns text into speech.
+
+
+**Polly** - Polly turns text into speech.
   - Mimics natural-sounding human speech
   - Several voices across many languages
   - Can create a custom voice
   - Polly could convert the text on a blog post to speech that could then be downloaded or replayed in MP3 format. Audio is often a great complement to written communication.
-- **Translate** - Translate provides language translation
+
+
+**Translate** - Translate provides language translation
   - Provides real-time and batch language translation
   - Supports many languages
   - Translates many content formats
   - translate allows you to add localization to your applications to support your diverse user base. Translate supports several popular languages.
-- **Lex** - Lex helps you build conversational interfaces like chatbots.
+
+
+**Lex** - Lex helps you build conversational interfaces like chatbots.
   - Recognizes speech and understands language
   - Build highly engaging chatbots
   - Powers Amazon Alexa
@@ -388,37 +457,51 @@ Artificial intelligence (AI) teaches computers to do things that normally requir
 
 #### Developer Tools
 Software developers use tools to accelerate the  software development and release cycle.
-- **Cloud9** - Cloud9 allows you to write code within an integrated development environment (IDE) from within your web browser.
+
+
+**Cloud9** - Cloud9 allows you to write code within an integrated development environment (IDE) from within your web browser.
 - Cloud9 preconfigures the development environment with the needed SDKs and libraries. You can easily write the code for your Lambda function directly in your web browser.   
   - Integrated development environment (IDE)
   - Write and debug code
   - Supports popular programming languages
-- **CodeCommit** - CodeCommit is a source control system for private Git repositories. 
+
+
+**CodeCommit** - CodeCommit is a source control system for private Git repositories. 
 - CodeCommit can be used to manage source code and the different versions of application files.  CodeCommit is similar to GitHub
   - Create repositories to store code 
   - Commit, branch, and merge code
   - Collaborate with other software developers
-- **CodeBuild** - CodeBuild allows you to build and test your application source code.
+
+
+**CodeBuild** - CodeBuild allows you to build and test your application source code.
 - CodeBuild allows you to run as many parallel streams of tests as needed, allowing you to deploy your changes to production more quickly. 
   -  Compiles source code and runs tests 
   -  Enables continuous integration and delivery
   -  Produces build artifacts ready to be deployed
-- **CodeDeploy** - CodeDeploy manages the deployment of code to compute services in the cloud or on-premises.
+
+
+**CodeDeploy** - CodeDeploy manages the deployment of code to compute services in the cloud or on-premises.
 - CodeDeploy eliminates the downtime of your application when deploying a new version due to its rolling deployments.
   - Deploys code to EC2, Fargate, Lambda, and on-premises
   - Maintains application uptime
-- **CodePipeline** - CodePipeline automates the software release process
+
+
+**CodePipeline** - CodePipeline automates the software release process
 - When combined with other developer tools, CodePipeline helps development teams implement DevOps practices that automate testing and the movement of code to production. 
   - Quickly deliver new features and updates
   - Integrates with CodeBuild to run builds and unit tests 
   - Integrates with CodeCommit to retrieve source code
   - Integrates with CodeDeploy to deploy your changes
-- **X-Ray** - X-Ray helps you debug production applications.
+
+
+**X-Ray** - X-Ray helps you debug production applications.
 - X-Ray can help you map requests made to your RDS database from within your application. You can track information about the SQL queries generated and more.
   - Analyze and debug production applications
   - Map application components
   - View requests end to end
-- **CodeStar** helps developers collaboratively work on development projects.
+
+
+**CodeStar** helps developers collaboratively work on development projects.
 - CodeStar can managed the development pipeline
   - Developers connect their development environment
   - ntegrates with CodeCommit, CodeBuild, and CodeDeploy
@@ -436,17 +519,23 @@ Software developers use tools to accelerate the  software development and releas
 
 #### Deployment and Infrastucture Management  
 These services help you quickly stand up new applications,automate the management of infrastructure, and provide real-time visibility into system health.  Infrastructure as Code (IaC).  IaC allows you to write a script to provision AWS resources. The benefit is that you provision resources in a reproducible manner that saves time.  
-- **CloudFormation** - CloudFormation allows you to provision AWS resources using Infrastructure as Code (IaC).
+
+
+**CloudFormation** - CloudFormation allows you to provision AWS resources using Infrastructure as Code (IaC).
 - You can use CloudFormation to automate the creation of EC2 instances in your AWS account.
   - Provides a repeatable process for provisioning resources
   - Works with most AWS services
   - Create templates for the resources you want to provision
-- **Elastic Beanstalk** - Elastic Beanstalk allows you to deploy your web applications and web services to AWS.
+
+
+**Elastic Beanstalk** - Elastic Beanstalk allows you to deploy your web applications and web services to AWS.
 - After you upload your Java code, Elastic Beanstalk deploys it and handles capacity provisioning, load balancing, and Auto Scaling. Elastic Beanstalk even monitors the health of your application. 
   - Orchestration service that provisions resources
   - Automatically handles the deployment
   - Monitors application health via a health dashboard
-- **OpsWorks** -OpsWorks allows you to use Chef or Puppet to automate the configuration of your servers and deploy code.
+
+
+**OpsWorks** -OpsWorks allows you to use Chef or Puppet to automate the configuration of your servers and deploy code.
 - OpsWorks allows you to define software installation scripts and automate configuration for your application servers.
   - Deploy code and manage applications
   - Manage on-premises servers or EC2 instances in AWS Cloud
@@ -461,7 +550,9 @@ These services help you quickly stand up new applications,automate the managemen
 
 #### Messaging and Integration
 Coupling defines the interdependencies or connections between components of a system. Loose coupling helps reduce the risk of cascading failures between components. Queues are used to implement loosely coupled systems.  Monolithic applications tend to be tightly coupled and microservices tend to be loosely coupled.
-- **Simple Queue Service (SQS)** - SQS is a message queuing service that allows you to build loosely coupled systems.
+
+
+**Simple Queue Service (SQS)** - SQS is a message queuing service that allows you to build loosely coupled systems.
 - SQS lets you build an app that is loosely coupled, allowing components to send, store, and receive messages. The use of a messaging queue helps to improve performance and scalability. 
   - Allows component-to-component communication using messages
   - Multiple components (or producers) can add messages to the queue
@@ -472,12 +563,16 @@ Coupling defines the interdependencies or connections between components of a sy
     - Remember that message queues support loose coupling.
 
 There are often times that users of your applications need to be notified when certain events happen. SNS works with CloudWatch when an alarm's metric threshold is breached to send an email.
-- **Simple Notification Service (SNS)** - SNS allows you to send emails and text messages from your applications.
+
+
+**Simple Notification Service (SNS)** - SNS allows you to send emails and text messages from your applications.
 - SNS works with CloudWatch when an alarm's metric threshold is breached to send an email.
   - Send email and text messages
   - Publish messages to a topic
   - Subscribers receive messages
-- **Simple Email Service (SES)** - SES is an email service that allows you to send richly formatted HTML emails from your applications.
+
+
+**Simple Email Service (SES)** - SES is an email service that allows you to send richly formatted HTML emails from your applications.
 - SES allows you to send richly formatted HTML emails in bulk and gain valuable insights about the effectiveness of your campaign.
   - Ideal choice for marketing campaigns or professional emails
   - Unlike SNS, SES sends HTML emails
@@ -498,7 +593,7 @@ These services give you insight into how well your systems are performing and he
   - Detect anomalies in your environmentCreate a CloudWatch event rule to notify you when root user API calls are detected in your account indicating root user activity.
   - Set alarms
   - Visualize logs. 
-  -   
+   
 **CloudTrail** - CloudTrail tracks user activity and API calls within your account.
 - You can troubleshoot events over the past 90 days using the CloudTrail event history log to find the specific time an event occurred on a per-Region basis. You can create a custom trail to extend past 90 days.
   - Log and retain account activity
