@@ -490,13 +490,15 @@ There are often times that users of your applications need to be notified when c
 
 #### Auditing, Monitoring, and Logging
 These services give you insight into how well your systems are performing and help you proactively find and resolve errors.   
+
 **CloudWatch** - CloudWatch is a collection of services that help you monitor and observe your cloud resources.
 - CloudWatch Alarms can notify you if an EC2 instance goes into the stopped state or usage goes above a certain utilization.
 - CloudWatch event rule can notify you when root user API calls are detected in your account indicating root user activity.
   - Collects metrics, logs, and events
   - Detect anomalies in your environmentCreate a CloudWatch event rule to notify you when root user API calls are detected in your account indicating root user activity.
   - Set alarms
-  - Visualize logs.   
+  - Visualize logs. 
+  -   
 **CloudTrail** - CloudTrail tracks user activity and API calls within your account.
 - You can troubleshoot events over the past 90 days using the CloudTrail event history log to find the specific time an event occurred on a per-Region basis. You can create a custom trail to extend past 90 days.
   - Log and retain account activity
