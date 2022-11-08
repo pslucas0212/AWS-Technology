@@ -5,7 +5,7 @@
 ### AWS Services
 
 #### Compute
-- EC2 - Elastic Cloud Compute. EC2 allows you to rent and manage virtual servers in the cloud.  Provision with one click.  Chose pre-configured template from Amazon Machine Image (AMI). Configure and manages EC2 instance from the AWS Management console.  SSH secure connection to laptop.  EC2 Instance Connect (EIC) allows you to use IAM policies to control SSH access without the need to manage SSH keys.  Systems manages connects to EC2 via web browser or AWS CLI.
+- **EC2** - Elastic Cloud Compute. EC2 allows you to rent and manage virtual servers in the cloud.  Provision with one click.  Chose pre-configured template from Amazon Machine Image (AMI). Configure and manages EC2 instance from the AWS Management console.  SSH secure connection to laptop.  EC2 Instance Connect (EIC) allows you to use IAM policies to control SSH access without the need to manage SSH keys.  Systems manages connects to EC2 via web browser or AWS CLI.
   - Pricing Options
     - On-demand - Live on-demand fixed billing down to the second
     - Spot
@@ -42,7 +42,7 @@
   - Understand how to connect to an EC2 instance from your local machine
    - A key pair is needed to access an EC2 instance from your local machine.  
    
-- Lambda - Lambda is a serverless compute service that lets you run code without managing servers.
+- **Lambda** - Lambda is a serverless compute service that lets you run code without managing servers.
   - Author application code called functions
     - Supports popular programming languages: Java, GO, PowerShell, Node. JS, C#, Python, and Ruby
   - Scales automatically
@@ -59,7 +59,7 @@
   - Always free
     - Even after the free-usage tier expires, you'll have access to 1 million free Lambda calls each month.
     
-- Fargate - Fargate is a **serverless compute engine** for containers
+- **Fargate** - Fargate is a **serverless compute engine** for containers
   - Manage containers like docker
   - Scale automatically
   - Serverless so you don't worry about managng instances
@@ -88,7 +88,7 @@
 #### Storage
 Companies today need to collect, store, and analyze the data they've accumulated over the years on a massive scale. Storage services in the cloud provide a place for companies to store data.  
 
-- S3 - Simple Storage Service - S3 is an **object storage service** for the cloud that is highly available.
+- **S3** - Simple Storage Service - S3 is an **object storage service** for the cloud that is highly available.
   - Objects (files) are stored in buckets (folders)
   - Unlimted storage
   - Objects can be public or private
@@ -118,19 +118,19 @@ Companies today need to collect, store, and analyze the data they've accumulated
   - S3 storage classes
     - S3 offers unlimited storage with many storage classes. Understand the use cases for each storage class. 
    
-- EBS - Elastic Block Storage - EBS is a storage device (called a volume) that can be attached to (or removed from) your instance.
+- **EBS** - Elastic Block Storage - EBS is a storage device (called a volume) that can be attached to (or removed from) your instance.
   - Data persists when instances is not running
   - Tied to one AZ
   - only attached to one instance in the same AZ
   - Good for running a database or long-term storage
 - EC2 Instance store is physically attached to EC2 instance and cannot be removed.  Faster I/O.  Data is lost when EC2 instance is stopped.  Volumes are ephemeral
-- EFS - Elastic File System - EFS is a serverless network file system for sharing files.  Supports Linux systems only.  More expensive than EBS.  Acessible across different AZs in same region
+- **EFS** - Elastic File System - EFS is a serverless network file system for sharing files.  Supports Linux systems only.  More expensive than EBS.  Acessible across different AZs in same region
   - Business directories
   - Lift and Shift
-- Storage Gateway - Storage Gateway is a hybrid storage service
+- **Storage Gateway** - Storage Gateway is a hybrid storage service
   - Connect on-premises with the cloud
   - Move backups to the loud
-- AWS Backup - Backup helps you manage data backups across multiple data services.  Integrates with EC2, EBS, EFS and more.  Backup plan includes frequency and retention
+- **AWS Backup** - Backup helps you manage data backups across multiple data services.  Integrates with EC2, EBS, EFS and more.  Backup plan includes frequency and retention
 - Studying for the Exam
   - EFS
     - Don't forget EFS only supports Linux file systems.
@@ -144,7 +144,7 @@ Companies today need to collect, store, and analyze the data they've accumulated
 #### Content Delivery
 A CDN is a mechanism to deliver content quickly and efficiently based on geographic location.  Latency simply means the time it takes to respond to a request.  Low latency is good!  
 
-- CloudFront - CloudFront is a CDN that delivers data and applications globally with low latency.
+- **CloudFront** - CloudFront is a CDN that delivers data and applications globally with low latency.
   - Content globally available or restrict base on location
   - Speeds up delivery of static and dynamic web content
   - edge locations to cache content
@@ -153,12 +153,12 @@ A CDN is a mechanism to deliver content quickly and efficiently based on geograp
     - Prevent Attacks - DDOS and geo restictions
     - IP address blocking
   - If data not available at the edge, CloudFront retreives data from the origin
-- Amazon Global Accelerator - Global Accelerator sends your users through the AWS global network when accessing your content, speeding up delivery.
+- **Amazon Global Accelerator** - Global Accelerator sends your users through the AWS global network when accessing your content, speeding up delivery.
   - Improves latency and availability of single-Region applications
   - Sends traffic through the AWS global network infrastructure
   - 60% performance boost
   - Automatically re-routes traffic to healthy available regional endpoints
-- S3 Transfer Acceleration - S3 Transfer Acceleration improves content uploads and downloads to and from S3 buckets.
+- **S3 Transfer Acceleration** - S3 Transfer Acceleration improves content uploads and downloads to and from S3 buckets.
   - Fast transfer of files over long distances
   - Uses CloudFront’s globally distributed edge locations
   - Customers around the world can upload to a central bucket
@@ -175,7 +175,7 @@ A CDN is a mechanism to deliver content quickly and efficiently based on geograp
 #### Networking
 Networking connects computers together and allows for the sharing of data and applications, around the globe, in a secure manner using virtual routers, firewalls, and network management services.  
 
-- Amazon Virtual Private Cloud (VPC) - VPC is a foundational service that allows you to create a secure private network in the AWS Cloud where you launch your resources.
+- **Amazon Virtual Private Cloud (VPC)** - VPC is a foundational service that allows you to create a secure private network in the AWS Cloud where you launch your resources.
   - Private virtual network
   - Launch resources like EC2 instances inside the VPC. In a subnet
   - Isolate and protect resources
@@ -193,11 +193,11 @@ Networking connects computers together and allows for the sharing of data and ap
   - VPC
     - Don't forget an internet gateway allows traffic to the public internet and peering connects 2 VPCs together.
 
-- Route 53 - Route 53 is a DNS service that routes users to applications.
+- **Route 53** - Route 53 is a DNS service that routes users to applications.
   - Domain name registration
   - Performs health checks on AWS resources
   - Supports hybrid cloud architectures
-- AWS Direct Connect is a dedicated physical network connection from data center to AWS
+- **AWS Direct Connect** is a dedicated physical network connection from data center to AWS
   - Dedicated physical network connection
   - Connects your on-premises data center to AWS
   - Data travels over a private network
@@ -206,13 +206,13 @@ Networking connects computers together and allows for the sharing of data and ap
     - Large datasets
     - Business Critical data
     - Hybrid Model
-- Virtual Private Network (VPN) - Site-to-Site VPN creates a secure connection between your internal networks and your AWS VPCs. 
+- **Virtual Private Network (VPN)** - Site-to-Site VPN creates a secure connection between your internal networks and your AWS VPCs. 
   - Similar to Direct Connect, but data travels over the public internet
   - Data is automatically encrypted
   - Connects your on-premises data center to AWS
   - Supports a hybrid environment
   - A Site-to-Site VPN makes moving applications to the cloud easier.
-- API Gateway - API Gateway allows you to build and manage APIs.
+- **API Gateway** - API Gateway allows you to build and manage APIs.
   - Share data between systems
   - Integrate with services like Lambda
 - Studying for the Exam
@@ -224,27 +224,27 @@ Networking connects computers together and allows for the sharing of data and ap
     - Remember that Direct Connect supports a hybrid model.
 
 #### Databases
-- Relational Database Service (RDS) - RDS is a service that makes it easy to launch and manage relational databases. Like Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle Database, and SQL Server.
+- **Relational Database Service (RDS)** - RDS is a service that makes it easy to launch and manage relational databases. Like Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle Database, and SQL Server.
   - Offers high availability and fault tolerance using Multi-AZ deployment option
   - AWS manages the database with automatic software patching,  automated backups, operating system maintenance, and more.
   - Launches read replicas across regions to provide enhanced performance and durability
-- Aurora - Aurora is a relational database compatible with MySQL and PostgreSQL that was created by AWS.
+- **Aurora** - Aurora is a relational database compatible with MySQL and PostgreSQL that was created by AWS.
   - Scales automatically while  providing durability and high availability 
   - Managed by RDS
-- DocumentDB - DocumentDB is a fully managed document database that supports MongoDB.
+- **DocumentDB** - DocumentDB is a fully managed document database that supports MongoDB.
   - Document database
   - MongoDB Compatible
   - Fully managed and serverless
   - non-relational
-- DynamoDB - DynamoDB is a fully managed NoSQL key-value and document database.
+- **DynamoDB** - DynamoDB is a fully managed NoSQL key-value and document database.
   - Fully managed and serverless
   - Scales automatically to massive workloads with fast performance
   - non-relational
-- ElastiCache - ElastiCache is a fully managed in-memory datastore compatible with Redis or Memcached.
+- **ElastiCache** - ElastiCache is a fully managed in-memory datastore compatible with Redis or Memcached.
   - In-memory datastore
   - Data can be lost
   - Offers high performance and low latency
-- Neptune - Neptune is a fully managed graph database that supports highly connected datasets. Create social media graphs
+- **Neptune** - Neptune is a fully managed graph database that supports highly connected datasets. Create social media graphs
   - Graph database service
   - Supports highly connected datasets like social media networks
   - Fully managed and serverless
@@ -264,7 +264,7 @@ Networking connects computers together and allows for the sharing of data and ap
     - Keep in mind that DocumentDB supports MongoDB.
 
 #### Migration and Transfer
-- Database Migration Service (DMS) - DMS helps you migrate databases to or within AWS.
+- **Database Migration Service** (DMS) - DMS helps you migrate databases to or within AWS.
   - Migrate on-premises databases to AWS
   - Continuous data replication
   - Supports homogeneous and heterogeneous migrations
@@ -273,16 +273,16 @@ Networking connects computers together and allows for the sharing of data and ap
     - Oracle to Aurora MySQL
     - Oracle on-prem to RDS Oracle
     - RDS Oracle to Aurora MySQL
-- Server Migration Service (SMS) - SMS allows you to migrate on-premises servers to AWS.
+- **Server Migration Service (SMS)** - SMS allows you to migrate on-premises servers to AWS.
   - Migrates on-premises servers to AWS
   - Server saved as a new Amazon Machine Image (AMI)
   - Use AMI to launch servers as EC2 instances
-- DataSync - DataSync allows for online data transfer from on-premises to AWS storage services like S3 or EFS.
+- **DataSync** - DataSync allows for online data transfer from on-premises to AWS storage services like S3 or EFS.
   - Migrates data from on-premises to AWS
   - Copy data over Direct Connect or the internet
   - Copy data between AWS storage services
   - Replicate data cross-Region or cross-account 
-- Snow Family - The Snow Family allows you to transfer large amounts of on-premises data to AWS using a physical device.
+- **Snow Family** - The Snow Family allows you to transfer large amounts of on-premises data to AWS using a physical device.
   - Snowcone
     - Smallest member of data transport devices
     - 8 terabytes of usable storage
@@ -308,9 +308,9 @@ Networking connects computers together and allows for the sharing of data and ap
      - Don't forget DataSync transfers data online and can be used to replicate data cross-Region or cross-accoun
 
 #### Analytics
-- A data warehouse is a data storage solution that aggregates massive amounts of historical data from disparate sources.
+A data warehouse is a data storage solution that aggregates massive amounts of historical data from disparate sources.
   - Data warehouses support querying, reporting, analytics, and business intelligence. They are not used for transaction processing.
-- Redshift -  Redshift is a scalable data warehouse solution.
+- **Redshift** -  Redshift is a scalable data warehouse solution.
   - Data warehousing solution
   - Improves speed and efficiency
   - Handles exabyte-scale data
@@ -318,27 +318,27 @@ Networking connects computers together and allows for the sharing of data and ap
     - Data consolidation - When you need to consolidate multiple data sources for reporting
     - Relational Databases - When you want to run a database that doesn't require real-time transaction processing (insert, update, and delete)
 - Analytics is the act of querying or processing your data.
-- Athena - Athena is a query service for Amazon S3.
+- **Athena** - Athena is a query service for Amazon S3.
   - Query service
   - Analyze S3 data using SQL
   - Pay per query
   - Considered serverless
-- Glue - Glue prepares your data for analytics.
+- **Glue** - Glue prepares your data for analytics.
   - Extract, transform, load (ETL) service
   - Prepare and load data
   - Helps to better understand your data
-- Kinesis - Kinesis allows you to analyze data and video streams in real time.
+- **Kinesis** - Kinesis allows you to analyze data and video streams in real time.
   - Analyze real-time, streaming data
   - Supports video, audio, application logs, website clickstreams, and IoT
-- Elastic MapReduce (EMR) - EMR helps you process large amounts of data.
+- **MapReduce (EMR)** - EMR helps you process large amounts of data.
   - Process big data
   - Analyze data using Hadoop
   - Works with big data frameworks
-- Data Pipeline - Data Pipeline helps you move data between compute and storage services running either on AWS or on-premises.
+- **Data Pipeline** - Data Pipeline helps you move data between compute and storage services running either on AWS or on-premises.
   - Moves data at specific intervals
   - Moves data based on conditions
   - Sends notifications on success or failure
-- QuickSight helps you visualize your data.
+- **QuickSight** helps you visualize your data.
   - Build interactive dashboards
   - Embed dashboards in your applications
 - Analytics are good for:
