@@ -503,8 +503,8 @@ Software developers use tools to accelerate the  software development and releas
 **CodePipeline** - CodePipeline automates the software release process
 - When combined with other developer tools, CodePipeline helps development teams implement DevOps practices that automate testing and the movement of code to production. 
   - Quickly deliver new features and updates
-  - Integrates with CodeBuild to run builds and unit tests 
   - Integrates with CodeCommit to retrieve source code
+  - Integrates with CodeBuild to run builds and unit tests 
   - Integrates with CodeDeploy to deploy your changes
 
 
@@ -518,7 +518,7 @@ Software developers use tools to accelerate the  software development and releas
 **CodeStar** helps developers collaboratively work on development projects.
 - CodeStar can managed the development pipeline
   - Developers connect their development environment
-  - ntegrates with CodeCommit, CodeBuild, and CodeDeploy
+  - Integrates with CodeCommit, CodeBuild, and CodeDeploy
   - Contains issue tracking dashboard
 - Studying for the Exam
   - CodeCommit
