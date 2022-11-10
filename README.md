@@ -6,7 +6,18 @@
 
 #### Compute
   
-**EC2** - Elastic Cloud Compute. EC2 allows you to rent and manage virtual servers in the cloud.  Provision with one click.  Chose pre-configured template from Amazon Machine Image (AMI). Configure and manages EC2 instance from the AWS Management console.  SSH secure connection to laptop.  EC2 Instance Connect (EIC) allows you to use IAM policies to control SSH access without the need to manage SSH keys.  Systems manages connects to EC2 via web browser or AWS CLI.
+**EC2** - Elastic Cloud Compute. EC2 allows you to rent and manage virtual servers in the cloud.  
+- Provision with one click.  
+- Chose pre-configured template from Amazon Machine Image (AMI). 
+- Deploy Applications directly to EC2
+- 750 Compute hours per month on Free tier plan
+
+Methods to Acess EC2 Instances
+- Configure and manages EC2 instance from the AWS Management console.  
+- SSH secure connection to laptop.  
+- EC2 Instance Connect (EIC) allows you to use IAM policies to control SSH access without the need to manage SSH keys.  
+- AWS Systems Manager connects to EC2 via web browser or AWS CLI.
+
   - Pricing Options
     - On-demand - Live on-demand fixed billing down to the second
     - Spot
@@ -15,9 +26,10 @@
     - Savings plans - commit to a usage spend
   - Features
     - Elastic Load Balance across EC2 instances - classic load balancers   |   application load balancers   |   gateway load balancers   |   network load balancers
+      - automatically distributes your incoming application traffic across multiple EC2 instances.
     - EC2 autoscaling
+      - EC2 Auto Scaling adds or replaces EC2 instances automatically across AZs, based on need and changing demand.
   - Horizontal vs vertical scaling
-  - Connect to EC2 instance via SSH key paris
   - Remember EC2 instances deployed in a datacenter that resides in an AZ which resides in a Region
     - A single region contains mutliple AZs
     - A single AZ contains mutliple datacenters
@@ -25,10 +37,6 @@
     - Servers are physical h/w running in a datacenter
     - EC2 instances are virtual servers running on physical servers.  These instances are not considered serverless.
     - Region (N. Virginia) -> AZ (US-EAST-1) -> datacenter
-  - AWS Console - You're able to configure and manage your instances via a web browser.
-  - SSH allows you to establish a secure connection to your instance from your local laptop. 
-  - EC2 Instance Connect (EIC).  EIC allows you to use IAM policies to control SSH access to your instances, removing the need to manage SSH keys.
-  - AWS Systems Manager - Systems Manager allows you to manage your EC2 instances via a web browser or the AWS CLI
 - Study for the Exam
   - EC2 pricing options
     - Understand On-Demand, Spot, Reserved Instances, Dedicated Hosts, and Savings Plans.
