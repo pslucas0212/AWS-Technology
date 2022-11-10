@@ -141,7 +141,8 @@ Companies today need to collect, store, and analyze the data they've accumulated
   - Tied to one AZ
   - only attached to one instance in the same AZ
   - Good for running a database or long-term storage
-- EC2 Instance store is physically attached to EC2 instance and cannot be removed.  Faster I/O.  Data is lost when EC2 instance is stopped.  Volumes are ephemeral
+
+**EC2 Instance** store is physically attached to EC2 instance and cannot be removed.  Faster I/O.  Data is lost when EC2 instance is stopped.  Volumes are ephemeral
 
 
 **EFS** - Elastic File System - EFS is a serverless network file system for sharing files.  Supports Linux systems only.  More expensive than EBS.  Acessible across different AZs in same region
