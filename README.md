@@ -74,17 +74,17 @@ Methods to Acess EC2 Instances
   - Manage containers like docker
   - Scale automatically
   - Serverless so you don't worry about managng instances
-- Lightsail - Lightsail allows you to quickly launch all the resources you need for small projects. Lightsail is a **compute** service
+**Lightsail** - Lightsail allows you to quickly launch all the resources you need for small projects. Lightsail is a **compute** service
   - Deploye preconfigured apps like wordpress
   - Easy to use - simple screens
   - Includes VM, ssd storage, data transfer, DNS Managment, static IP
   - Provides low predictable monthly fee
-- Outposts - Outposts allows you to run cloud services in your internal data center. Support for hybrid deployments
+**Outposts** - Outposts allows you to run cloud services in your internal data center. Support for hybrid deployments
   - Workloads on-premise due to low-latency or data sovereignty
   - AWS Delivers and installs serverers in customer data center
   - Hybrid experience
   - Access cloud services and APIs to develop apps on-premise
-- Batch - Batch allows you to process large workloads in smaller chunks (or batches).  Batch is a **compute** service.  Dynamically provisions instances based on volumes
+**Batch** - Batch allows you to process large workloads in smaller chunks (or batches).  Batch is a **compute** service.  Dynamically provisions instances based on volumes
 - Studying for the Exam
   - Outposts
     - AWS Outposts supports a hybrid deployment model.
